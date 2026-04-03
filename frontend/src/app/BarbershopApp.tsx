@@ -77,13 +77,6 @@ const sidebarIntegrationEntries: SidebarEntry[] = [
   { key: 'acesso', label: 'Acesso', hint: 'login e permissoes', moduleId: 'acesso', screenSlug: 'tela-de-login' },
 ]
 
-const sidebarModuleEntries: SidebarEntry[] = appModules.map((module) => ({
-  key: `module-${module.id}`,
-  label: module.name,
-  hint: module.eyebrow,
-  moduleId: module.id,
-  screenSlug: module.defaultScreen.slug,
-}))
 
 function isAppModuleId(value: string | null): value is AppModuleId {
   return value !== null && appModuleIds.includes(value as AppModuleId)
@@ -523,20 +516,8 @@ function FloatingNavigator({
         ) : null}
       </div>
 
-      <div className="fixed right-4 top-4 z-50 rounded-[24px] border border-white/10 bg-black/72 px-4 py-3 text-right shadow-[0_20px_60px_rgba(0,0,0,0.45)] backdrop-blur">
-        <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-primary-container">
-          {selection.moduleId === 'overview' ? 'Visao geral' : activeModule?.eyebrow ?? 'Workspace'}
-        </p>
-        <p className="mt-1 text-sm font-semibold text-white">
-          {activeScreen?.label ?? 'Cockpit BarberPro'}
-        </p>
-        <p className="mt-1 text-[11px] uppercase tracking-[0.2em] text-on-surface-variant">
-          {selection.moduleId === 'overview' ? 'module=overview' : `module=${selection.moduleId}`}
-        </p>
-      </div>
-
       {launcherOpen ? (
-        <aside className="fixed right-4 top-20 z-50 flex max-h-[calc(100vh-6rem)] w-[min(388px,calc(100vw-2rem))] flex-col gap-5 overflow-auto rounded-[30px] border border-white/10 bg-black/82 p-4 shadow-[0_40px_120px_rgba(0,0,0,0.6)] backdrop-blur">
+        <aside className="fixed right-4 top-16 z-50 flex max-h-[calc(100vh-5rem)] w-[min(388px,calc(100vw-2rem))] flex-col gap-5 overflow-auto rounded-[30px] border border-white/10 bg-black/82 p-4 shadow-[0_40px_120px_rgba(0,0,0,0.6)] backdrop-blur">
           <div className="flex items-start justify-between gap-4">
             <div>
               <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-on-surface-variant">
@@ -584,16 +565,6 @@ function FloatingNavigator({
           <SidebarSection
             title="Integracoes e acesso"
             entries={sidebarIntegrationEntries}
-            selection={selection}
-            onSelect={(entry) => {
-              onSelectEntry(entry)
-              setLauncherOpen(false)
-            }}
-          />
-
-          <SidebarSection
-            title="Modulos principais"
-            entries={sidebarModuleEntries}
             selection={selection}
             onSelect={(entry) => {
               onSelectEntry(entry)

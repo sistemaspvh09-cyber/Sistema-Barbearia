@@ -1,7 +1,21 @@
 
-import React from 'react';
+import React, { useState } from 'react';
+import { fetchGoogleAuthorizationUrl } from '../lib/auth-api';
+import { defaultBarbershopSlug } from '../lib/backend';
 
 const IntegraOGoogleAgendaAdmin: React.FC = () => {
+  const [connecting, setConnecting] = useState(false);
+
+  async function handleConnectGoogle() {
+    setConnecting(true);
+    try {
+      const { authorization_url } = await fetchGoogleAuthorizationUrl({ barbershop_slug: defaultBarbershopSlug });
+      window.location.href = authorization_url;
+    } catch {
+      setConnecting(false);
+    }
+  }
+
   return (
     <div className="min-h-screen bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container">
       
@@ -181,9 +195,13 @@ const IntegraOGoogleAgendaAdmin: React.FC = () => {
 <img alt="Google Calendar" className="w-6 h-6 mb-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB__odPFQGXylWV2kXSXWVGXrnienkVLRJjEb_8BL6Gu58EwB8nX4R4-p3Mmd1Z_rj_--DSNECRZoNiWBjFR7SUAIPJ40iVf6-uVOHr6SJiKxRPHb3Icw9jEVIAZdSZp6pz-dlE2uEiH5ZN10KogpW056W-G_0PjN7qQCmoWPzql1ZOCWa4qbCWyfyIIfOBjhDyk_2GG5v5g9Sz20KMi25tA7FM5tCrL2XUEtKfxc43lD5fIxhCHGNMYuKsIsdfUbM20MPveXfVBO7G"/>
 <span className="text-[8px] font-bold text-white/50 uppercase">Off</span>
 </div>
-<button className="bg-[#C8FF00] text-[#4f6700] px-4 py-2 rounded-xl text-xs font-bold hover:scale-105 transition-all shadow-lg active:scale-95">
-                            Conectar
-                        </button>
+<button
+  onClick={handleConnectGoogle}
+  disabled={connecting}
+  className="bg-[#C8FF00] text-[#4f6700] px-4 py-2 rounded-xl text-xs font-bold hover:scale-105 transition-all shadow-lg active:scale-95 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100"
+>
+  {connecting ? 'Aguarde...' : 'Conectar'}
+</button>
 </div>
 </div>
 {/* Barber Row 3 (Connected) */}
