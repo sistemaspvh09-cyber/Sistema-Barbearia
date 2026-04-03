@@ -19,27 +19,27 @@ const AgendaPremium: React.FC = () => {
 </div>
 </div>
 <nav className="flex-1 flex flex-col gap-1 px-3">
-<a className="flex items-center gap-3 px-4 py-3 rounded-lg text-[#A0A0A0] hover:text-white hover:bg-[#1A1919] transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-lg text-[#A0A0A0] hover:text-white hover:bg-[#1A1919] transition-all duration-300" href="?module=overview">
 <span className="material-symbols-outlined">dashboard</span>
 <span className="font-medium text-sm tracking-tight">Dashboard</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 rounded-lg text-[#C8FF00] border-r-4 border-[#C8FF00] bg-gradient-to-r from-[#C8FF00]/10 to-transparent transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-lg text-[#C8FF00] border-r-4 border-[#C8FF00] bg-gradient-to-r from-[#C8FF00]/10 to-transparent transition-all duration-300" href="?module=agenda&screen=agenda-premium">
 <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>calendar_month</span>
 <span className="font-medium text-sm tracking-tight">Agenda</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 rounded-lg text-[#A0A0A0] hover:text-white hover:bg-[#1A1919] transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-lg text-[#A0A0A0] hover:text-white hover:bg-[#1A1919] transition-all duration-300" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">
 <span className="material-symbols-outlined">group</span>
 <span className="font-medium text-sm tracking-tight">Clientes</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 rounded-lg text-[#A0A0A0] hover:text-white hover:bg-[#1A1919] transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-lg text-[#A0A0A0] hover:text-white hover:bg-[#1A1919] transition-all duration-300" href="?module=operacao&screen=configura-ode-servi-os-desktop">
 <span className="material-symbols-outlined">content_cut</span>
 <span className="font-medium text-sm tracking-tight">Serviços</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 rounded-lg text-[#A0A0A0] hover:text-white hover:bg-[#1A1919] transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-lg text-[#A0A0A0] hover:text-white hover:bg-[#1A1919] transition-all duration-300" href="?module=financeiro&screen=configura-ofinanceira-admin">
 <span className="material-symbols-outlined">payments</span>
 <span className="font-medium text-sm tracking-tight">Financeiro</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 rounded-lg text-[#A0A0A0] hover:text-white hover:bg-[#1A1919] transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-lg text-[#A0A0A0] hover:text-white hover:bg-[#1A1919] transition-all duration-300" href="?module=operacao&screen=painel-administrativo">
 <span className="material-symbols-outlined">settings</span>
 <span className="font-medium text-sm tracking-tight">Configurações</span>
 </a>
@@ -49,19 +49,19 @@ const AgendaPremium: React.FC = () => {
 <span className="material-symbols-outlined text-sm">add</span>
                 Novo Agendamento
             </button>
-<button className="w-full mt-4 flex items-center gap-3 px-4 py-3 rounded-lg text-[#A0A0A0] hover:text-white transition-colors">
+<a href="?module=acesso&screen=tela-de-login" className="w-full mt-4 flex items-center gap-3 px-4 py-3 rounded-lg text-[#A0A0A0] hover:text-white transition-colors">
 <span className="material-symbols-outlined">logout</span>
 <span className="font-medium text-sm tracking-tight">Sair</span>
-</button>
+</a>
 </div>
 </aside>
 {/* TopNavBar (Shared Component) */}
 <header className="fixed top-0 right-0 w-full md:w-[calc(100%-260px)] h-16 z-40 bg-[#0D0D0D]/70 backdrop-blur-xl border-b border-white/5 flex items-center justify-between px-8">
 <div className="flex items-center gap-6">
 <div className="hidden md:flex items-center gap-8">
-<a className="text-[#A0A0A0] font-bold text-base hover:text-white transition-opacity" href="#">Visão Geral</a>
-<a className="text-[#C8FF00] font-bold text-base border-b-2 border-[#C8FF00] pb-1" href="#">Relatórios</a>
-<a className="text-[#A0A0A0] font-bold text-base hover:text-white transition-opacity" href="#">Equipe</a>
+<a className="text-[#A0A0A0] font-bold text-base hover:text-white transition-opacity" href="?module=overview">Visão Geral</a>
+<a className="text-[#C8FF00] font-bold text-base border-b-2 border-[#C8FF00] pb-1" href="?module=agenda&screen=agenda-premium">Relatórios</a>
+<a className="text-[#A0A0A0] font-bold text-base hover:text-white transition-opacity" href="?module=operacao&screen=gest-ode-equipe-admin">Equipe</a>
 </div>
 </div>
 <div className="flex items-center gap-5">
@@ -294,19 +294,19 @@ const AgendaPremium: React.FC = () => {
 ) : null}
 {/* BottomNavBar (Shared Component Mobile) */}
 <nav className="md:hidden fixed bottom-0 left-0 w-full h-16 z-50 rounded-t-[24px] border-t border-white/10 bg-[#1A1919]/80 backdrop-blur-lg flex justify-around items-center px-4 pb-safe shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] active:bg-white/5 transition-all duration-200" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] active:bg-white/5 transition-all duration-200" href="?module=overview">
 <span className="material-symbols-outlined">home</span>
 <span className="font-['Plus_Jakarta_Sans'] text-[10px] font-bold">Início</span>
 </a>
-<a className="flex flex-col items-center justify-center text-[#C8FF00] active:bg-white/5 transition-all duration-200 scale-110" href="#">
+<a className="flex flex-col items-center justify-center text-[#C8FF00] active:bg-white/5 transition-all duration-200 scale-110" href="?module=agenda&screen=agenda-premium">
 <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>event_note</span>
 <span className="font-['Plus_Jakarta_Sans'] text-[10px] font-bold">Agenda</span>
 </a>
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] active:bg-white/5 transition-all duration-200" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] active:bg-white/5 transition-all duration-200" href="?module=financeiro&screen=configura-ofinanceira-admin">
 <span className="material-symbols-outlined">account_balance_wallet</span>
 <span className="font-['Plus_Jakarta_Sans'] text-[10px] font-bold">Financeiro</span>
 </a>
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] active:bg-white/5 transition-all duration-200" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] active:bg-white/5 transition-all duration-200" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">
 <span className="material-symbols-outlined">person</span>
 <span className="font-['Plus_Jakarta_Sans'] text-[10px] font-bold">Perfil</span>
 </a>

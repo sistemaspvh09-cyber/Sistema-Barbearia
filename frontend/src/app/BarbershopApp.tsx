@@ -462,7 +462,7 @@ function FloatingNavigator({
   onSelectEntry: (entry: SidebarEntry) => void
   onSelectScreen: (screenSlug: string) => void
 }) {
-  const [launcherOpen, setLauncherOpen] = useState(true)
+  const [launcherOpen, setLauncherOpen] = useState(false)
   const [screenQuery, setScreenQuery] = useState('')
   const [copiedRoute, setCopiedRoute] = useState<string | null>(null)
   const normalizedQuery = normalizeQuery(screenQuery)

@@ -10,9 +10,9 @@ const AgendaMultiBarbeiroAdmin: React.FC = () => {
 <div className="flex items-center gap-8">
 <span className="text-xl font-extrabold tracking-tighter text-[#C8FF00] font-['Plus_Jakarta_Sans']">BarberPro</span>
 <nav className="hidden md:flex gap-6">
-<a className="text-[#A0A0A0] font-medium hover:text-[#C8FF00] hover:scale-105 transition-all duration-300" href="#">Dashboard</a>
-<a className="text-[#C8FF00] font-bold border-b-2 border-[#C8FF00] pb-1 hover:scale-105 transition-all duration-300" href="#">Agenda</a>
-<a className="text-[#A0A0A0] font-medium hover:text-[#C8FF00] hover:scale-105 transition-all duration-300" href="#">Financeiro</a>
+<a className="text-[#A0A0A0] font-medium hover:text-[#C8FF00] hover:scale-105 transition-all duration-300" href="?module=overview">Dashboard</a>
+<a className="text-[#C8FF00] font-bold border-b-2 border-[#C8FF00] pb-1 hover:scale-105 transition-all duration-300" href="?module=agenda&screen=agenda-multi-barbeiro-admin">Agenda</a>
+<a className="text-[#A0A0A0] font-medium hover:text-[#C8FF00] hover:scale-105 transition-all duration-300" href="?module=financeiro&screen=configura-ofinanceira-admin">Financeiro</a>
 </nav>
 </div>
 <div className="flex items-center gap-4">
@@ -34,23 +34,23 @@ const AgendaMultiBarbeiroAdmin: React.FC = () => {
 <p className="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-2">Menu Principal</p>
 </div>
 <nav className="flex-1 space-y-1">
-<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 mx-2 hover:bg-[#C8FF00]/10 hover:text-[#C8FF00] transition-colors duration-300 rounded-xl font-['Plus_Jakarta_Sans'] font-semibold text-sm" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 mx-2 hover:bg-[#C8FF00]/10 hover:text-[#C8FF00] transition-colors duration-300 rounded-xl font-['Plus_Jakarta_Sans'] font-semibold text-sm" href="?module=overview">
 <span className="material-symbols-outlined">dashboard</span>
 <span>Dashboard</span>
 </a>
-<a className="flex items-center gap-3 bg-[#C8FF00] text-[#4f6700] rounded-xl px-4 py-3 mx-2 shadow-[0_0_20px_rgba(200,255,0,0.2)] font-['Plus_Jakarta_Sans'] font-semibold text-sm" href="#">
+<a className="flex items-center gap-3 bg-[#C8FF00] text-[#4f6700] rounded-xl px-4 py-3 mx-2 shadow-[0_0_20px_rgba(200,255,0,0.2)] font-['Plus_Jakarta_Sans'] font-semibold text-sm" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined">calendar_month</span>
 <span>Agenda</span>
 </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 mx-2 hover:bg-[#C8FF00]/10 hover:text-[#C8FF00] transition-colors duration-300 rounded-xl font-['Plus_Jakarta_Sans'] font-semibold text-sm" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 mx-2 hover:bg-[#C8FF00]/10 hover:text-[#C8FF00] transition-colors duration-300 rounded-xl font-['Plus_Jakarta_Sans'] font-semibold text-sm" href="?module=financeiro&screen=configura-ofinanceira-admin">
 <span className="material-symbols-outlined">payments</span>
 <span>Financeiro</span>
 </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 mx-2 hover:bg-[#C8FF00]/10 hover:text-[#C8FF00] transition-colors duration-300 rounded-xl font-['Plus_Jakarta_Sans'] font-semibold text-sm" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 mx-2 hover:bg-[#C8FF00]/10 hover:text-[#C8FF00] transition-colors duration-300 rounded-xl font-['Plus_Jakarta_Sans'] font-semibold text-sm" href="?module=operacao&screen=gest-ode-equipe-admin">
 <span className="material-symbols-outlined">groups</span>
 <span>Equipe</span>
 </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 mx-2 hover:bg-[#C8FF00]/10 hover:text-[#C8FF00] transition-colors duration-300 rounded-xl font-['Plus_Jakarta_Sans'] font-semibold text-sm" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 mx-2 hover:bg-[#C8FF00]/10 hover:text-[#C8FF00] transition-colors duration-300 rounded-xl font-['Plus_Jakarta_Sans'] font-semibold text-sm" href="?module=operacao&screen=configura-ode-servi-os-desktop">
 <span className="material-symbols-outlined">content_cut</span>
 <span>Serviços</span>
 </a>
@@ -62,11 +62,11 @@ const AgendaMultiBarbeiroAdmin: React.FC = () => {
             </button>
 </div>
 <div className="space-y-1">
-<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 mx-2 hover:bg-[#C8FF00]/10 hover:text-[#C8FF00] transition-colors duration-300 rounded-xl font-['Plus_Jakarta_Sans'] font-semibold text-sm" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 mx-2 hover:bg-[#C8FF00]/10 hover:text-[#C8FF00] transition-colors duration-300 rounded-xl font-['Plus_Jakarta_Sans'] font-semibold text-sm" href="?module=acesso&screen=suporte-echamados">
 <span className="material-symbols-outlined">support_agent</span>
 <span>Suporte</span>
 </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 mx-2 hover:bg-[#C8FF00]/10 hover:text-error transition-colors duration-300 rounded-xl font-['Plus_Jakarta_Sans'] font-semibold text-sm" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 mx-2 hover:bg-[#C8FF00]/10 hover:text-error transition-colors duration-300 rounded-xl font-['Plus_Jakarta_Sans'] font-semibold text-sm" href="?module=acesso&screen=tela-de-login">
 <span className="material-symbols-outlined">logout</span>
 <span>Sair</span>
 </a>
