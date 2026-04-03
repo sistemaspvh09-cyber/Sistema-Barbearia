@@ -1,7 +1,9 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 
 const AgendaPremium: React.FC = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container">
       
@@ -43,7 +45,7 @@ const AgendaPremium: React.FC = () => {
 </a>
 </nav>
 <div className="px-6 mt-auto">
-<button className="w-full py-4 bg-primary-container text-on-primary rounded-2xl font-bold text-sm shadow-[0_0_20px_rgba(200,255,0,0.2)] hover:scale-[1.02] active:scale-[0.98] transition-transform flex items-center justify-center gap-2">
+<button onClick={() => setModalOpen(true)} className="w-full py-4 bg-primary-container text-on-primary rounded-2xl font-bold text-sm shadow-[0_0_20px_rgba(200,255,0,0.2)] hover:scale-[1.02] active:scale-[0.98] transition-transform flex items-center justify-center gap-2">
 <span className="material-symbols-outlined text-sm">add</span>
                 Novo Agendamento
             </button>
@@ -200,15 +202,16 @@ const AgendaPremium: React.FC = () => {
 </div>
 </main>
 {/* Modal Overlay (Novo Agendamento) */}
-<div className="fixed inset-0 z-50 flex items-center justify-center px-4 bg-black/80 backdrop-blur-md">
-<div className="w-full max-w-2xl bg-surface-container rounded-[2rem] overflow-hidden shadow-[0_32px_64px_-16px_rgba(0,0,0,0.5)] border border-white/10">
+{modalOpen ? (
+<div onClick={() => setModalOpen(false)} className="fixed inset-0 z-50 flex items-center justify-center px-4 bg-black/80 backdrop-blur-md">
+<div onClick={(e) => e.stopPropagation()} className="w-full max-w-2xl bg-surface-container rounded-[2rem] overflow-hidden shadow-[0_32px_64px_-16px_rgba(0,0,0,0.5)] border border-white/10">
 {/* Modal Header */}
 <div className="p-8 border-b border-white/5 flex items-center justify-between">
 <div>
 <h3 className="text-2xl font-black tracking-tight text-white">Novo Agendamento</h3>
 <p className="text-on-surface-variant text-sm">Preencha os detalhes para reservar o horário.</p>
 </div>
-<button className="w-12 h-12 rounded-2xl bg-white/5 hover:bg-white/10 text-white flex items-center justify-center transition-colors">
+<button onClick={() => setModalOpen(false)} className="w-12 h-12 rounded-2xl bg-white/5 hover:bg-white/10 text-white flex items-center justify-center transition-colors">
 <span className="material-symbols-outlined">close</span>
 </button>
 </div>
@@ -288,6 +291,7 @@ const AgendaPremium: React.FC = () => {
 </div>
 </div>
 </div>
+) : null}
 {/* BottomNavBar (Shared Component Mobile) */}
 <nav className="md:hidden fixed bottom-0 left-0 w-full h-16 z-50 rounded-t-[24px] border-t border-white/10 bg-[#1A1919]/80 backdrop-blur-lg flex justify-around items-center px-4 pb-safe shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
 <a className="flex flex-col items-center justify-center text-[#A0A0A0] active:bg-white/5 transition-all duration-200" href="#">
