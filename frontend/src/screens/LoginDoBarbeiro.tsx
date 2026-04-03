@@ -80,9 +80,9 @@ const LoginDoBarbeiro: React.FC = () => {
                 </p>
 </div>
 <div className="flex gap-6">
-<a className="font-['Plus_Jakarta_Sans'] text-xs font-medium text-[#A0A0A0] hover:text-[#C8FF00] underline-offset-4 hover:underline transition-all duration-300" href="#">Privacy Policy</a>
-<a className="font-['Plus_Jakarta_Sans'] text-xs font-medium text-[#A0A0A0] hover:text-[#C8FF00] underline-offset-4 hover:underline transition-all duration-300" href="#">Terms of Service</a>
-<a className="font-['Plus_Jakarta_Sans'] text-xs font-medium text-[#A0A0A0] hover:text-[#C8FF00] underline-offset-4 hover:underline transition-all duration-300" href="#">Support</a>
+<a className="font-['Plus_Jakarta_Sans'] text-xs font-medium text-[#A0A0A0] hover:text-[#C8FF00] underline-offset-4 hover:underline transition-all duration-300" href="?module=acesso&screen=suporte-echamados">Privacy Policy</a>
+<a className="font-['Plus_Jakarta_Sans'] text-xs font-medium text-[#A0A0A0] hover:text-[#C8FF00] underline-offset-4 hover:underline transition-all duration-300" href="?module=acesso&screen=suporte-echamados">Terms of Service</a>
+<a className="font-['Plus_Jakarta_Sans'] text-xs font-medium text-[#A0A0A0] hover:text-[#C8FF00] underline-offset-4 hover:underline transition-all duration-300" href="?module=acesso&screen=suporte-echamados">Support</a>
 </div>
 </div>
 </footer>

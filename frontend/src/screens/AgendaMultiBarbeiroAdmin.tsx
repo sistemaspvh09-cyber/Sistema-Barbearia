@@ -279,11 +279,11 @@ const AgendaMultiBarbeiroAdmin: React.FC = () => {
 </main>
 {/* BottomNavBar (Mobile Only) */}
 <nav className="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-[#1A1919]/80 backdrop-blur-md border-t border-[#C8FF00]/10 shadow-[0_-10px_30px_rgba(0,0,0,0.5)] rounded-t-3xl">
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] p-2 hover:text-[#C8FF00] transition-transform" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] p-2 hover:text-[#C8FF00] transition-transform" href="?module=overview">
 <span className="material-symbols-outlined">home</span>
 <span className="text-[10px] font-bold uppercase tracking-widest mt-1">Home</span>
 </a>
-<a className="flex flex-col items-center justify-center bg-[#C8FF00] text-[#4f6700] rounded-2xl p-2 scale-110" href="#">
+<a className="flex flex-col items-center justify-center bg-[#C8FF00] text-[#4f6700] rounded-2xl p-2 scale-110" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined">event_note</span>
 <span className="text-[10px] font-bold uppercase tracking-widest mt-1">Agenda</span>
 </a>

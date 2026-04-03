@@ -17,27 +17,27 @@ const PagamentosInfinitepay: React.FC = () => {
 </div>
 </div>
 <nav className="flex-1 px-4 space-y-2">
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-white hover:bg-[#1A1919] transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-white hover:bg-[#1A1919] transition-all duration-300" href="?module=overview">
 <span className="material-symbols-outlined" data-icon="dashboard">dashboard</span>
 <span className="font-['Plus_Jakarta_Sans'] font-medium text-sm tracking-tight">Dashboard</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-white hover:bg-[#1A1919] transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-white hover:bg-[#1A1919] transition-all duration-300" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
 <span className="font-['Plus_Jakarta_Sans'] font-medium text-sm tracking-tight">Agenda</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-white hover:bg-[#1A1919] transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-white hover:bg-[#1A1919] transition-all duration-300" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">
 <span className="material-symbols-outlined" data-icon="group">group</span>
 <span className="font-['Plus_Jakarta_Sans'] font-medium text-sm tracking-tight">Clientes</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-white hover:bg-[#1A1919] transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-white hover:bg-[#1A1919] transition-all duration-300" href="?module=operacao&screen=configura-ode-servi-os-desktop">
 <span className="material-symbols-outlined" data-icon="content_cut">content_cut</span>
 <span className="font-['Plus_Jakarta_Sans'] font-medium text-sm tracking-tight">Serviços</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#C8FF00] border-r-4 border-[#C8FF00] bg-gradient-to-r from-[#C8FF00]/10 to-transparent transition-all duration-300 scale-[1.02]" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#C8FF00] border-r-4 border-[#C8FF00] bg-gradient-to-r from-[#C8FF00]/10 to-transparent transition-all duration-300 scale-[1.02]" href="?module=financeiro&screen=configura-ofinanceira-admin">
 <span className="material-symbols-outlined" data-icon="payments">payments</span>
 <span className="font-['Plus_Jakarta_Sans'] font-medium text-sm tracking-tight">Financeiro</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-white hover:bg-[#1A1919] transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-white hover:bg-[#1A1919] transition-all duration-300" href="?module=operacao&screen=painel-administrativo">
 <span className="material-symbols-outlined" data-icon="settings">settings</span>
 <span className="font-['Plus_Jakarta_Sans'] font-medium text-sm tracking-tight">Configurações</span>
 </a>
@@ -47,7 +47,7 @@ const PagamentosInfinitepay: React.FC = () => {
 <span className="material-symbols-outlined" data-icon="add_circle">add_circle</span>
                 Novo Agendamento
             </button>
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-error transition-colors" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-error transition-colors" href="?module=acesso&screen=tela-de-login">
 <span className="material-symbols-outlined" data-icon="logout">logout</span>
 <span className="font-['Plus_Jakarta_Sans'] font-medium text-sm tracking-tight">Sair</span>
 </a>
@@ -58,9 +58,9 @@ const PagamentosInfinitepay: React.FC = () => {
 <div className="flex items-center gap-8">
 <h2 className="hidden md:block text-[#C8FF00] font-black font-['Plus_Jakarta_Sans'] text-base">Financeiro</h2>
 <div className="hidden lg:flex items-center gap-6">
-<a className="text-[#C8FF00] border-b-2 border-[#C8FF00] pb-1 font-bold text-sm" href="#">Visão Geral</a>
-<a className="text-[#A0A0A0] hover:text-white transition-opacity font-bold text-sm" href="#">Relatórios</a>
-<a className="text-[#A0A0A0] hover:text-white transition-opacity font-bold text-sm" href="#">Equipe</a>
+<a className="text-[#C8FF00] border-b-2 border-[#C8FF00] pb-1 font-bold text-sm" href="?module=overview">Visão Geral</a>
+<a className="text-[#A0A0A0] hover:text-white transition-opacity font-bold text-sm" href="?module=operacao&screen=gest-ode-equipe-admin">Relatórios</a>
+<a className="text-[#A0A0A0] hover:text-white transition-opacity font-bold text-sm" href="?module=operacao&screen=gest-ode-equipe-admin">Equipe</a>
 </div>
 </div>
 <div className="flex items-center gap-6">
@@ -292,19 +292,19 @@ const PagamentosInfinitepay: React.FC = () => {
 </main>
 {/* BottomNavBar (Execution from JSON) */}
 <nav className="md:hidden fixed bottom-0 left-0 w-full h-16 z-50 rounded-t-[24px] border-t border-white/10 bg-[#1A1919]/80 backdrop-blur-lg flex justify-around items-center px-4 pb-safe shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] transition-transform active:scale-110" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] transition-transform active:scale-110" href="?module=overview">
 <span className="material-symbols-outlined" data-icon="home">home</span>
 <span className="font-['Plus_Jakarta_Sans'] text-[10px] font-bold">Início</span>
 </a>
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] transition-transform active:scale-110" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] transition-transform active:scale-110" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined" data-icon="event_note">event_note</span>
 <span className="font-['Plus_Jakarta_Sans'] text-[10px] font-bold">Agenda</span>
 </a>
-<a className="flex flex-col items-center justify-center text-[#C8FF00] transition-transform active:scale-110" href="#">
+<a className="flex flex-col items-center justify-center text-[#C8FF00] transition-transform active:scale-110" href="?module=financeiro&screen=configura-ofinanceira-admin">
 <span className="material-symbols-outlined" data-icon="account_balance_wallet" style={{ fontVariationSettings: "'FILL' 1" }}>account_balance_wallet</span>
 <span className="font-['Plus_Jakarta_Sans'] text-[10px] font-bold">Financeiro</span>
 </a>
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] transition-transform active:scale-110" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] transition-transform active:scale-110" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">
 <span className="material-symbols-outlined" data-icon="person">person</span>
 <span className="font-['Plus_Jakarta_Sans'] text-[10px] font-bold">Perfil</span>
 </a>

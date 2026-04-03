@@ -12,11 +12,11 @@ const RetenODeClientesChurn: React.FC = () => {
 <p className="text-on-surface-variant text-xs mt-1">Unidade Premium</p>
 </div>
 <nav className="flex-1 px-4 space-y-2 mt-4">
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:bg-white/5 hover:translate-x-1 transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:bg-white/5 hover:translate-x-1 transition-all duration-300" href="?module=overview">
 <span className="material-symbols-outlined">dashboard</span>
 <span>Dashboard</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:bg-white/5 hover:translate-x-1 transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:bg-white/5 hover:translate-x-1 transition-all duration-300" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">
 <span className="material-symbols-outlined">group</span>
 <span>Clientes</span>
 </a>
@@ -24,11 +24,11 @@ const RetenODeClientesChurn: React.FC = () => {
 <span className="material-symbols-outlined">person_remove</span>
 <span>Retenção</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:bg-white/5 hover:translate-x-1 transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:bg-white/5 hover:translate-x-1 transition-all duration-300" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined">calendar_month</span>
 <span>Agenda</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:bg-white/5 hover:translate-x-1 transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:bg-white/5 hover:translate-x-1 transition-all duration-300" href="?module=financeiro&screen=configura-ofinanceira-admin">
 <span className="material-symbols-outlined">payments</span>
 <span>Financeiro</span>
 </a>
@@ -38,11 +38,11 @@ const RetenODeClientesChurn: React.FC = () => {
                 Novo Agendamento
             </button>
 <div className="pt-4 border-t border-outline-variant/30">
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:bg-white/5 transition-all" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:bg-white/5 transition-all" href="?module=operacao&screen=painel-administrativo">
 <span className="material-symbols-outlined">settings</span>
 <span>Configurações</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:bg-white/5 transition-all" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:bg-white/5 transition-all" href="?module=acesso&screen=tela-de-login">
 <span className="material-symbols-outlined">logout</span>
 <span>Sair</span>
 </a>
@@ -254,7 +254,7 @@ const RetenODeClientesChurn: React.FC = () => {
 </main>
 {/* Bottom Navigation (Mobile Only) */}
 <nav className="md:hidden fixed bottom-0 left-0 w-full bg-[#0D0D0D]/80 backdrop-blur-lg rounded-t-3xl border-t border-[#C8FF00]/15 z-50 flex justify-around items-center px-4 py-3 pb-safe font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-widest">
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] hover:text-white transition-all scale-110 duration-300" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] hover:text-white transition-all scale-110 duration-300" href="?module=overview">
 <span className="material-symbols-outlined">home</span>
 <span className="mt-1">Início</span>
 </a>
@@ -262,11 +262,11 @@ const RetenODeClientesChurn: React.FC = () => {
 <span className="material-symbols-outlined">analytics</span>
 <span className="mt-1">Retenção</span>
 </a>
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] hover:text-white transition-all scale-110 duration-300" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] hover:text-white transition-all scale-110 duration-300" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined">event</span>
 <span className="mt-1">Agenda</span>
 </a>
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] hover:text-white transition-all scale-110 duration-300" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] hover:text-white transition-all scale-110 duration-300" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">
 <span className="material-symbols-outlined">person</span>
 <span className="mt-1">Perfil</span>
 </a>

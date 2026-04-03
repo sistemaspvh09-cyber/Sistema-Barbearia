@@ -12,23 +12,23 @@ const CentralDeAniversariantesMarketing: React.FC = () => {
 <p className="text-[10px] text-[#A0A0A0] uppercase tracking-widest font-bold">Premium Management</p>
 </div>
 <nav className="flex flex-col gap-1 flex-1">
-<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:bg-white/5 rounded-xl hover:translate-x-1 transition-all duration-300 group" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:bg-white/5 rounded-xl hover:translate-x-1 transition-all duration-300 group" href="?module=overview">
 <span className="material-symbols-outlined">grid_view</span>
 <span>Dashboard</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:bg-white/5 rounded-xl hover:translate-x-1 transition-all duration-300 group" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:bg-white/5 rounded-xl hover:translate-x-1 transition-all duration-300 group" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined">calendar_today</span>
 <span>Agendamentos</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 bg-[#C8FF00] text-[#4f6700] rounded-xl shadow-[0_0_20px_rgba(200,255,0,0.4)] transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-4 py-3 bg-[#C8FF00] text-[#4f6700] rounded-xl shadow-[0_0_20px_rgba(200,255,0,0.4)] transition-all duration-300" href="?module=marketing&screen=dashboard-de-marketing-egrowth">
 <span className="material-symbols-outlined">campaign</span>
 <span className="font-bold">Marketing</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:bg-white/5 rounded-xl hover:translate-x-1 transition-all duration-300 group" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:bg-white/5 rounded-xl hover:translate-x-1 transition-all duration-300 group" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">
 <span className="material-symbols-outlined">group</span>
 <span>Clientes</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:bg-white/5 rounded-xl hover:translate-x-1 transition-all duration-300 group" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:bg-white/5 rounded-xl hover:translate-x-1 transition-all duration-300 group" href="?module=financeiro&screen=configura-ofinanceira-admin">
 <span className="material-symbols-outlined">payments</span>
 <span>Financeiro</span>
 </a>
@@ -37,11 +37,11 @@ const CentralDeAniversariantesMarketing: React.FC = () => {
 <button className="w-full bg-[#C8FF00] text-[#4f6700] py-3 rounded-xl font-bold mb-4 hover:scale-[1.02] active:scale-95 transition-all duration-300">
                 Novo Agendamento
             </button>
-<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:bg-white/5 rounded-xl transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:bg-white/5 rounded-xl transition-all duration-300" href="?module=acesso&screen=suporte-echamados">
 <span className="material-symbols-outlined">help</span>
 <span>Suporte</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:bg-white/5 rounded-xl transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:bg-white/5 rounded-xl transition-all duration-300" href="?module=acesso&screen=tela-de-login">
 <span className="material-symbols-outlined">logout</span>
 <span>Sair</span>
 </a>

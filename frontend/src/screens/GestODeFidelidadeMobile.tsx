@@ -145,18 +145,18 @@ const GestODeFidelidadeMobile: React.FC = () => {
 </button>
 {/* BottomNavBar */}
 <nav className="fixed bottom-0 w-full z-50 bg-[#1A1919]/70 backdrop-blur-xl border-t border-white/15 rounded-t-[24px] shadow-[0px_-4px_20px_rgba(0,0,0,0.5)] flex justify-around items-center px-4 py-3 h-20 md:hidden">
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] p-3 hover:text-white transition-colors" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] p-3 hover:text-white transition-colors" href="?module=overview">
 <span className="material-symbols-outlined">home</span>
 <span className="font-['Plus_Jakarta_Sans'] font-medium text-[10px] mt-1">Início</span>
 </a>
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] p-3 hover:text-white transition-colors" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] p-3 hover:text-white transition-colors" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined">calendar_today</span>
 <span className="font-['Plus_Jakarta_Sans'] font-medium text-[10px] mt-1">Agenda</span>
 </a>
 <a className="flex flex-col items-center justify-center bg-[#C8FF00] text-[#4f6700] rounded-2xl p-3 shadow-[0px_0px_20px_rgba(200,255,0,0.4)] transition-all active:scale-90" href="#">
 <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>add_circle</span>
 </a>
-<a className="flex flex-col items-center justify-center text-[#C8FF00] p-3" href="#">
+<a className="flex flex-col items-center justify-center text-[#C8FF00] p-3" href="?module=clientes&screen=dashboard-de-fidelidade-admin">
 <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>group</span>
 <span className="font-['Plus_Jakarta_Sans'] font-medium text-[10px] mt-1">Fidelidade</span>
 </a>

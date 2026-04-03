@@ -12,20 +12,20 @@ const DashboardDeFidelidadeAdmin: React.FC = () => {
 <p className="text-[10px] uppercase tracking-[0.2em] text-on-surface-variant mt-1">Management SaaS</p>
 </div>
 <nav className="flex-1 px-4 space-y-2">
-<a className="flex items-center gap-3 px-4 py-3 text-gray-400 hover:text-white hover:bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-lg" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-gray-400 hover:text-white hover:bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-lg" href="?module=overview">
 <span className="material-symbols-outlined">dashboard</span>
 <span className="font-medium tracking-tight text-sm">Dashboard</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 text-gray-400 hover:text-white hover:bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-lg" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-gray-400 hover:text-white hover:bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-lg" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined">calendar_today</span>
 <span className="font-medium tracking-tight text-sm">Agenda</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 text-gray-400 hover:text-white hover:bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-lg" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-gray-400 hover:text-white hover:bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-lg" href="?module=overview">
 <span className="material-symbols-outlined">groups</span>
 <span className="font-medium tracking-tight text-sm">Clients</span>
 </a>
 {/* Dashboard Active State Logic Applied to Loyalty Tab */}
-<a className="flex items-center gap-3 px-4 py-3 text-[#C8FF00] bg-white/5 rounded-lg border-l-4 border-[#C8FF00]" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-[#C8FF00] bg-white/5 rounded-lg border-l-4 border-[#C8FF00]" href="?module=clientes&screen=dashboard-de-fidelidade-admin">
 <span className="material-symbols-outlined">stars</span>
 <span className="font-medium tracking-tight text-sm">Fidelidade</span>
 </a>

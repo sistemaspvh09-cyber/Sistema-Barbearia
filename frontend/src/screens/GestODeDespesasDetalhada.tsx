@@ -12,15 +12,15 @@ const GestODeDespesasDetalhada: React.FC = () => {
 <p className="text-[10px] text-on-surface-variant uppercase tracking-widest font-bold">Gestão de Alta Performance</p>
 </div>
 <nav className="flex-1 space-y-1">
-<a className="flex items-center gap-3 px-6 py-3 text-[#A0A0A0] hover:bg-white/5 transition-all duration-300 ease-in-out group" href="#">
+<a className="flex items-center gap-3 px-6 py-3 text-[#A0A0A0] hover:bg-white/5 transition-all duration-300 ease-in-out group" href="?module=overview">
 <span className="material-symbols-outlined text-xl group-hover:text-primary-container">dashboard</span>
 <span className="font-semibold text-sm">Dashboard</span>
 </a>
-<a className="flex items-center gap-3 px-6 py-3 bg-[#C8FF00]/10 text-[#C8FF00] border-r-4 border-[#C8FF00] transition-all duration-300 ease-in-out" href="#">
+<a className="flex items-center gap-3 px-6 py-3 bg-[#C8FF00]/10 text-[#C8FF00] border-r-4 border-[#C8FF00] transition-all duration-300 ease-in-out" href="?module=financeiro&screen=configura-ofinanceira-admin">
 <span className="material-symbols-outlined text-xl">payments</span>
 <span className="font-semibold text-sm">Financeiro</span>
 </a>
-<a className="flex items-center gap-3 px-6 py-3 text-[#A0A0A0] hover:bg-white/5 transition-all duration-300 ease-in-out group" href="#">
+<a className="flex items-center gap-3 px-6 py-3 text-[#A0A0A0] hover:bg-white/5 transition-all duration-300 ease-in-out group" href="?module=operacao&screen=gest-ode-equipe-admin">
 <span className="material-symbols-outlined text-xl group-hover:text-primary-container">group</span>
 <span className="font-semibold text-sm">Equipe</span>
 </a>
@@ -28,7 +28,7 @@ const GestODeDespesasDetalhada: React.FC = () => {
 <span className="material-symbols-outlined text-xl group-hover:text-primary-container">shopping_cart_checkout</span>
 <span className="font-semibold text-sm">Checkout</span>
 </a>
-<a className="flex items-center gap-3 px-6 py-3 text-[#A0A0A0] hover:bg-white/5 transition-all duration-300 ease-in-out group" href="#">
+<a className="flex items-center gap-3 px-6 py-3 text-[#A0A0A0] hover:bg-white/5 transition-all duration-300 ease-in-out group" href="?module=financeiro&screen=relat-rios-de-faturamento-desktop">
 <span className="material-symbols-outlined text-xl group-hover:text-primary-container">analytics</span>
 <span className="font-semibold text-sm">Relatórios</span>
 </a>
@@ -38,11 +38,11 @@ const GestODeDespesasDetalhada: React.FC = () => {
 <span className="material-symbols-outlined text-lg">add_circle</span>
                 Novo Agendamento
             </button>
-<a className="flex items-center gap-3 px-6 py-2 text-[#A0A0A0] hover:text-white transition-colors" href="#">
+<a className="flex items-center gap-3 px-6 py-2 text-[#A0A0A0] hover:text-white transition-colors" href="?module=acesso&screen=suporte-echamados">
 <span className="material-symbols-outlined text-xl">help_center</span>
 <span className="font-semibold text-sm">Suporte</span>
 </a>
-<a className="flex items-center gap-3 px-6 py-2 text-error hover:text-error-container transition-colors" href="#">
+<a className="flex items-center gap-3 px-6 py-2 text-error hover:text-error-container transition-colors" href="?module=acesso&screen=tela-de-login">
 <span className="material-symbols-outlined text-xl">logout</span>
 <span className="font-semibold text-sm">Sair</span>
 </a>
@@ -272,7 +272,7 @@ const GestODeDespesasDetalhada: React.FC = () => {
 </main>
 {/* BottomNavBar (Mobile Only) */}
 <nav className="md:hidden fixed bottom-0 left-0 w-full z-50 bg-[#0D0D0D]/80 backdrop-blur-lg flex justify-around items-center px-4 h-20 pb-safe rounded-t-3xl border-t border-[#C8FF00]/10 shadow-[0px_-10px_30px_rgba(0,0,0,0.8)]">
-<a className="flex flex-col items-center justify-center text-[#A0A0A0]" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0]" href="?module=overview">
 <span className="material-symbols-outlined">home</span>
 <span className="text-[10px] font-bold uppercase tracking-widest mt-1">Início</span>
 </a>
@@ -280,7 +280,7 @@ const GestODeDespesasDetalhada: React.FC = () => {
 <span className="material-symbols-outlined">account_balance_wallet</span>
 <span className="text-[10px] font-bold uppercase tracking-widest mt-1">Finanças</span>
 </a>
-<a className="flex flex-col items-center justify-center text-[#A0A0A0]" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0]" href="?module=operacao&screen=gest-ode-equipe-admin">
 <span className="material-symbols-outlined">badge</span>
 <span className="text-[10px] font-bold uppercase tracking-widest mt-1">Equipe</span>
 </a>

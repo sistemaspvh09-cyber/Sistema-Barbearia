@@ -10,9 +10,9 @@ const RelatRiosDeFaturamentoDesktop: React.FC = () => {
 <div className="flex items-center gap-8">
 <span className="text-xl font-extrabold text-[#C8FF00] tracking-tighter">BarberPro</span>
 <div className="hidden md:flex items-center gap-6">
-<a className="text-zinc-400 font-medium hover:text-[#C8FF00] transition-colors duration-300" href="#">Dashboard</a>
-<a className="text-zinc-400 font-medium hover:text-[#C8FF00] transition-colors duration-300" href="#">Agenda</a>
-<a className="text-[#C8FF00] font-bold" href="#">Financeiro</a>
+<a className="text-zinc-400 font-medium hover:text-[#C8FF00] transition-colors duration-300" href="?module=overview">Dashboard</a>
+<a className="text-zinc-400 font-medium hover:text-[#C8FF00] transition-colors duration-300" href="?module=agenda&screen=agenda-multi-barbeiro-admin">Agenda</a>
+<a className="text-[#C8FF00] font-bold" href="?module=financeiro&screen=configura-ofinanceira-admin">Financeiro</a>
 </div>
 </div>
 <div className="flex items-center gap-4">
@@ -40,35 +40,35 @@ const RelatRiosDeFaturamentoDesktop: React.FC = () => {
 </div>
 </div>
 <nav className="flex-1 flex flex-col gap-1">
-<a className="flex items-center gap-3 px-3 py-2.5 text-zinc-500 hover:text-zinc-200 hover:bg-white/5 rounded-xl transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-3 py-2.5 text-zinc-500 hover:text-zinc-200 hover:bg-white/5 rounded-xl transition-all duration-300" href="?module=overview">
 <span className="material-symbols-outlined">dashboard</span>
 <span className="font-medium text-sm">Dashboard</span>
 </a>
-<a className="flex items-center gap-3 px-3 py-2.5 text-zinc-500 hover:text-zinc-200 hover:bg-white/5 rounded-xl transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-3 py-2.5 text-zinc-500 hover:text-zinc-200 hover:bg-white/5 rounded-xl transition-all duration-300" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined">calendar_today</span>
 <span className="font-medium text-sm">Agenda</span>
 </a>
-<a className="flex items-center gap-3 px-3 py-2.5 bg-[#C8FF00] text-[#4f6700] rounded-xl shadow-[0_0_20px_rgba(200,255,0,0.4)] transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-3 py-2.5 bg-[#C8FF00] text-[#4f6700] rounded-xl shadow-[0_0_20px_rgba(200,255,0,0.4)] transition-all duration-300" href="?module=financeiro&screen=configura-ofinanceira-admin">
 <span className="material-symbols-outlined">payments</span>
 <span className="font-medium text-sm">Financeiro</span>
 </a>
-<a className="flex items-center gap-3 px-3 py-2.5 text-zinc-500 hover:text-zinc-200 hover:bg-white/5 rounded-xl transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-3 py-2.5 text-zinc-500 hover:text-zinc-200 hover:bg-white/5 rounded-xl transition-all duration-300" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">
 <span className="material-symbols-outlined">group</span>
 <span className="font-medium text-sm">Clientes</span>
 </a>
-<a className="flex items-center gap-3 px-3 py-2.5 text-zinc-500 hover:text-zinc-200 hover:bg-white/5 rounded-xl transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-3 py-2.5 text-zinc-500 hover:text-zinc-200 hover:bg-white/5 rounded-xl transition-all duration-300" href="?module=operacao&screen=configura-ode-servi-os-desktop">
 <span className="material-symbols-outlined">content_cut</span>
 <span className="font-medium text-sm">Serviços</span>
 </a>
-<a className="flex items-center gap-3 px-3 py-2.5 text-zinc-500 hover:text-zinc-200 hover:bg-white/5 rounded-xl transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-3 py-2.5 text-zinc-500 hover:text-zinc-200 hover:bg-white/5 rounded-xl transition-all duration-300" href="?module=operacao&screen=gest-ode-equipe-admin">
 <span className="material-symbols-outlined">badge</span>
 <span className="font-medium text-sm">Equipe</span>
 </a>
-<a className="flex items-center gap-3 px-3 py-2.5 text-zinc-500 hover:text-zinc-200 hover:bg-white/5 rounded-xl transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-3 py-2.5 text-zinc-500 hover:text-zinc-200 hover:bg-white/5 rounded-xl transition-all duration-300" href="?module=operacao&screen=gest-ode-estoque-desktop">
 <span className="material-symbols-outlined">inventory_2</span>
 <span className="font-medium text-sm">Estoque</span>
 </a>
-<a className="flex items-center gap-3 px-3 py-2.5 text-zinc-500 hover:text-zinc-200 hover:bg-white/5 rounded-xl transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-3 py-2.5 text-zinc-500 hover:text-zinc-200 hover:bg-white/5 rounded-xl transition-all duration-300" href="?module=operacao&screen=painel-administrativo">
 <span className="material-symbols-outlined">settings</span>
 <span className="font-medium text-sm">Configurações</span>
 </a>
@@ -353,7 +353,7 @@ const RelatRiosDeFaturamentoDesktop: React.FC = () => {
 </main>
 {/* BottomNavBar (Mobile Only) */}
 <nav className="md:hidden fixed bottom-0 left-0 w-full bg-[#1A1919]/90 backdrop-blur-xl border-t border-white/10 flex justify-around items-center h-16 px-4 z-50">
-<a className="flex flex-col items-center gap-1 text-zinc-500" href="#">
+<a className="flex flex-col items-center gap-1 text-zinc-500" href="?module=overview">
 <span className="material-symbols-outlined">dashboard</span>
 <span className="text-[10px] font-bold">Home</span>
 </a>
@@ -366,11 +366,11 @@ const RelatRiosDeFaturamentoDesktop: React.FC = () => {
 <span className="material-symbols-outlined text-on-primary-container font-black">add</span>
 </button>
 </div>
-<a className="flex flex-col items-center gap-1 text-zinc-500" href="#">
+<a className="flex flex-col items-center gap-1 text-zinc-500" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined">calendar_today</span>
 <span className="text-[10px] font-bold">Agenda</span>
 </a>
-<a className="flex flex-col items-center gap-1 text-zinc-500" href="#">
+<a className="flex flex-col items-center gap-1 text-zinc-500" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">
 <span className="material-symbols-outlined">person</span>
 <span className="text-[10px] font-bold">Perfil</span>
 </a>

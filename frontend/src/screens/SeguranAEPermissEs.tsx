@@ -38,7 +38,7 @@ const SeguranAEPermissEs: React.FC = () => {
 <p className="text-xs text-on-surface-variant/70 uppercase tracking-widest font-medium">SaaS Enterprise v2.0</p>
 </div>
 <nav className="flex-1 space-y-1">
-<a className="flex items-center px-6 py-3 text-[#A0A0A0] hover:text-[#C8FF00] hover:bg-white/5 transition-all duration-300 group" href="#">
+<a className="flex items-center px-6 py-3 text-[#A0A0A0] hover:text-[#C8FF00] hover:bg-white/5 transition-all duration-300 group" href="?module=overview">
 <span className="material-symbols-outlined mr-3 group-hover:translate-x-1 duration-300" data-icon="dashboard">dashboard</span>
 <span className="font-['Plus_Jakarta_Sans'] font-medium text-sm">Dashboard</span>
 </a>
@@ -58,7 +58,7 @@ const SeguranAEPermissEs: React.FC = () => {
 <span className="material-symbols-outlined mr-3 group-hover:translate-x-1 duration-300" data-icon="group">group</span>
 <span className="font-['Plus_Jakarta_Sans'] font-medium text-sm">Usuários</span>
 </a>
-<a className="flex items-center px-6 py-3 text-[#A0A0A0] hover:text-[#C8FF00] hover:bg-white/5 transition-all duration-300 group" href="#">
+<a className="flex items-center px-6 py-3 text-[#A0A0A0] hover:text-[#C8FF00] hover:bg-white/5 transition-all duration-300 group" href="?module=financeiro&screen=relat-rios-de-faturamento-desktop">
 <span className="material-symbols-outlined mr-3 group-hover:translate-x-1 duration-300" data-icon="analytics">analytics</span>
 <span className="font-['Plus_Jakarta_Sans'] font-medium text-sm">Relatórios</span>
 </a>
@@ -69,11 +69,11 @@ const SeguranAEPermissEs: React.FC = () => {
                 Ver Logs do Sistema
             </button>
 <div className="pt-4 border-t border-outline-variant/10 space-y-1">
-<a className="flex items-center px-6 py-2 text-[#A0A0A0] hover:text-white transition-all text-sm" href="#">
+<a className="flex items-center px-6 py-2 text-[#A0A0A0] hover:text-white transition-all text-sm" href="?module=acesso&screen=suporte-echamados">
 <span className="material-symbols-outlined mr-3 text-lg" data-icon="help_center">help_center</span>
                     Suporte
                 </a>
-<a className="flex items-center px-6 py-2 text-error/80 hover:text-error transition-all text-sm" href="#">
+<a className="flex items-center px-6 py-2 text-error/80 hover:text-error transition-all text-sm" href="?module=acesso&screen=tela-de-login">
 <span className="material-symbols-outlined mr-3 text-lg" data-icon="logout">logout</span>
                     Sair
                 </a>

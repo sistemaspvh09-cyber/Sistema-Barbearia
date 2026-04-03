@@ -10,10 +10,10 @@ const SuporteEChamados: React.FC = () => {
 <div className="flex items-center gap-8">
 <span className="text-xl font-black text-[#C8FF00] italic font-['Plus_Jakarta_Sans'] tracking-tight">BarberPro</span>
 <nav className="hidden md:flex gap-6 items-center h-full">
-<a className="text-[#A0A0A0] hover:text-[#C8FF00] hover:bg-[#1A1919] transition-all duration-300 font-medium text-sm" href="#">Dashboard</a>
-<a className="text-[#A0A0A0] hover:text-[#C8FF00] hover:bg-[#1A1919] transition-all duration-300 font-medium text-sm" href="#">Agendamentos</a>
-<a className="text-[#A0A0A0] hover:text-[#C8FF00] hover:bg-[#1A1919] transition-all duration-300 font-medium text-sm" href="#">Clientes</a>
-<a className="text-[#C8FF00] border-b-2 border-[#C8FF00] pb-1 font-medium text-sm" href="#">Suporte</a>
+<a className="text-[#A0A0A0] hover:text-[#C8FF00] hover:bg-[#1A1919] transition-all duration-300 font-medium text-sm" href="?module=overview">Dashboard</a>
+<a className="text-[#A0A0A0] hover:text-[#C8FF00] hover:bg-[#1A1919] transition-all duration-300 font-medium text-sm" href="?module=agenda&screen=agenda-multi-barbeiro-admin">Agendamentos</a>
+<a className="text-[#A0A0A0] hover:text-[#C8FF00] hover:bg-[#1A1919] transition-all duration-300 font-medium text-sm" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">Clientes</a>
+<a className="text-[#C8FF00] border-b-2 border-[#C8FF00] pb-1 font-medium text-sm" href="?module=acesso&screen=suporte-echamados">Suporte</a>
 </nav>
 </div>
 <div className="flex items-center gap-4">
@@ -45,22 +45,22 @@ const SuporteEChamados: React.FC = () => {
 </div>
 </div>
 <nav className="flex-1 px-2 space-y-1">
-<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors rounded-lg font-medium text-sm" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors rounded-lg font-medium text-sm" href="?module=overview">
 <span className="material-symbols-outlined" data-icon="dashboard">dashboard</span> Dashboard
             </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors rounded-lg font-medium text-sm" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors rounded-lg font-medium text-sm" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined" data-icon="calendar_today">calendar_today</span> Agendamentos
             </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors rounded-lg font-medium text-sm" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors rounded-lg font-medium text-sm" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">
 <span className="material-symbols-outlined" data-icon="groups">groups</span> Clientes
             </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors rounded-lg font-medium text-sm" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors rounded-lg font-medium text-sm" href="?module=financeiro&screen=configura-ofinanceira-admin">
 <span className="material-symbols-outlined" data-icon="payments">payments</span> Financeiro
             </a>
-<a className="flex items-center gap-3 bg-[#C8FF00]/10 text-[#C8FF00] rounded-lg px-4 py-3 border-r-4 border-[#C8FF00] font-medium text-sm" href="#">
+<a className="flex items-center gap-3 bg-[#C8FF00]/10 text-[#C8FF00] rounded-lg px-4 py-3 border-r-4 border-[#C8FF00] font-medium text-sm" href="?module=operacao&screen=painel-administrativo">
 <span className="material-symbols-outlined" data-icon="contact_support" style={{ fontVariationSettings: "'FILL' 1" }}>contact_support</span> Suporte
             </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors rounded-lg font-medium text-sm" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors rounded-lg font-medium text-sm" href="?module=operacao&screen=painel-administrativo">
 <span className="material-symbols-outlined" data-icon="settings">settings</span> Configurações
             </a>
 </nav>
@@ -70,7 +70,7 @@ const SuporteEChamados: React.FC = () => {
                 Novo Chamado
             </button>
 <div className="mt-6 border-t border-outline-variant/10 pt-4 space-y-1">
-<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-2 hover:text-white transition-colors text-sm" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-2 hover:text-white transition-colors text-sm" href="?module=acesso&screen=tela-de-login">
 <span className="material-symbols-outlined text-lg" data-icon="logout">logout</span> Sair
                 </a>
 </div>

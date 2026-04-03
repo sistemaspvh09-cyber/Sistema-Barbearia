@@ -118,7 +118,7 @@ const ReaDoClienteInCio: React.FC = () => {
 {/* BottomNavBar */}
 <nav className="fixed bottom-0 w-full rounded-t-[24px] z-50 bg-[#1A1919]/70 backdrop-blur-xl border-t border-white/15 shadow-[0_-10px_40px_rgba(0,0,0,0.5)] flex justify-around items-center h-20 px-4 pb-safe">
 {/* Início (Active) */}
-<a className="flex flex-col items-center justify-center text-[#C8FF00] drop-shadow-[0_0_10px_rgba(200,255,0,0.4)] transition-all duration-300 active:scale-90" href="#">
+<a className="flex flex-col items-center justify-center text-[#C8FF00] drop-shadow-[0_0_10px_rgba(200,255,0,0.4)] transition-all duration-300 active:scale-90" href="?module=overview">
 <span className="material-symbols-outlined" data-icon="home" style={{ fontVariationSettings: "'FILL' 1" }}>home</span>
 <span className="font-['Plus_Jakarta_Sans'] font-medium text-[10px] uppercase tracking-wider mt-1">Início</span>
 </a>
@@ -128,12 +128,12 @@ const ReaDoClienteInCio: React.FC = () => {
 <span className="font-['Plus_Jakarta_Sans'] font-medium text-[10px] uppercase tracking-wider mt-1">Pontos</span>
 </a>
 {/* Histórico */}
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] hover:text-white transition-colors duration-300 active:scale-90" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] hover:text-white transition-colors duration-300 active:scale-90" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">
 <span className="material-symbols-outlined" data-icon="history">history</span>
 <span className="font-['Plus_Jakarta_Sans'] font-medium text-[10px] uppercase tracking-wider mt-1">Histórico</span>
 </a>
 {/* Perfil */}
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] hover:text-white transition-colors duration-300 active:scale-90" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] hover:text-white transition-colors duration-300 active:scale-90" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">
 <span className="material-symbols-outlined" data-icon="person">person</span>
 <span className="font-['Plus_Jakarta_Sans'] font-medium text-[10px] uppercase tracking-wider mt-1">Perfil</span>
 </a>

@@ -10,9 +10,9 @@ const DashboardDeMarketingEGrowth: React.FC = () => {
 <div className="flex items-center gap-8">
 <span className="text-xl font-extrabold text-[#C8FF00] tracking-tighter font-['Plus_Jakarta_Sans']">BarberPro</span>
 <div className="hidden md:flex gap-6">
-<a className="text-[#C8FF00] font-bold border-b-2 border-[#C8FF00] pb-1 font-['Plus_Jakarta_Sans'] tracking-tight hover:scale-105 transition-transform duration-300" href="#">Marketing</a>
-<a className="text-[#A0A0A0] hover:text-white transition-colors font-['Plus_Jakarta_Sans'] tracking-tight hover:scale-105 transition-transform duration-300" href="#">Dashboard</a>
-<a className="text-[#A0A0A0] hover:text-white transition-colors font-['Plus_Jakarta_Sans'] tracking-tight hover:scale-105 transition-transform duration-300" href="#">Relatórios</a>
+<a className="text-[#C8FF00] font-bold border-b-2 border-[#C8FF00] pb-1 font-['Plus_Jakarta_Sans'] tracking-tight hover:scale-105 transition-transform duration-300" href="?module=overview">Marketing</a>
+<a className="text-[#A0A0A0] hover:text-white transition-colors font-['Plus_Jakarta_Sans'] tracking-tight hover:scale-105 transition-transform duration-300" href="?module=overview">Dashboard</a>
+<a className="text-[#A0A0A0] hover:text-white transition-colors font-['Plus_Jakarta_Sans'] tracking-tight hover:scale-105 transition-transform duration-300" href="?module=financeiro&screen=relat-rios-de-faturamento-desktop">Relatórios</a>
 </div>
 </div>
 <div className="flex items-center gap-4">
@@ -44,10 +44,10 @@ const DashboardDeMarketingEGrowth: React.FC = () => {
 </div>
 </div>
 <nav className="flex-1 flex flex-col gap-1">
-<a className="flex items-center gap-3 py-3 px-4 text-[#A0A0A0] hover:bg-white/5 mx-2 rounded-xl hover:translate-x-1 transition-all duration-300 font-['Plus_Jakarta_Sans'] font-medium text-sm" href="#">
+<a className="flex items-center gap-3 py-3 px-4 text-[#A0A0A0] hover:bg-white/5 mx-2 rounded-xl hover:translate-x-1 transition-all duration-300 font-['Plus_Jakarta_Sans'] font-medium text-sm" href="?module=overview">
 <span className="material-symbols-outlined">dashboard</span> Dashboard
             </a>
-<a className="flex items-center gap-3 py-3 px-4 bg-[#C8FF00] text-[#4f6700] rounded-xl mx-2 shadow-[0_0_20px_rgba(200,255,0,0.4)] active:scale-98 transition-transform font-['Plus_Jakarta_Sans'] font-medium text-sm" href="#">
+<a className="flex items-center gap-3 py-3 px-4 bg-[#C8FF00] text-[#4f6700] rounded-xl mx-2 shadow-[0_0_20px_rgba(200,255,0,0.4)] active:scale-98 transition-transform font-['Plus_Jakarta_Sans'] font-medium text-sm" href="?module=marketing&screen=dashboard-de-marketing-egrowth">
 <span className="material-symbols-outlined">campaign</span> Marketing
             </a>
 <a className="flex items-center gap-3 py-3 px-4 text-[#A0A0A0] hover:bg-white/5 mx-2 rounded-xl hover:translate-x-1 transition-all duration-300 font-['Plus_Jakarta_Sans'] font-medium text-sm" href="#">
@@ -64,10 +64,10 @@ const DashboardDeMarketingEGrowth: React.FC = () => {
             New Campaign
         </button>
 <div className="border-t border-white/5 pt-4 flex flex-col gap-1">
-<a className="flex items-center gap-3 py-3 px-4 text-[#A0A0A0] hover:bg-white/5 mx-2 rounded-xl hover:translate-x-1 transition-all duration-300 font-['Plus_Jakarta_Sans'] font-medium text-sm" href="#">
+<a className="flex items-center gap-3 py-3 px-4 text-[#A0A0A0] hover:bg-white/5 mx-2 rounded-xl hover:translate-x-1 transition-all duration-300 font-['Plus_Jakarta_Sans'] font-medium text-sm" href="?module=acesso&screen=suporte-echamados">
 <span className="material-symbols-outlined">help</span> Support
             </a>
-<a className="flex items-center gap-3 py-3 px-4 text-[#A0A0A0] hover:bg-white/5 mx-2 rounded-xl hover:translate-x-1 transition-all duration-300 font-['Plus_Jakarta_Sans'] font-medium text-sm" href="#">
+<a className="flex items-center gap-3 py-3 px-4 text-[#A0A0A0] hover:bg-white/5 mx-2 rounded-xl hover:translate-x-1 transition-all duration-300 font-['Plus_Jakarta_Sans'] font-medium text-sm" href="?module=acesso&screen=tela-de-login">
 <span className="material-symbols-outlined">logout</span> Logout
             </a>
 </div>
@@ -364,7 +364,7 @@ const DashboardDeMarketingEGrowth: React.FC = () => {
 </main>
 {/* BottomNavBar */}
 <nav className="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-[#0D0D0D]/80 backdrop-blur-md z-50 md:hidden rounded-t-[1.5rem] border-t border-[#C8FF00]/15 shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] p-2 hover:text-[#C8FF00] transition-colors active:scale-90 duration-300" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] p-2 hover:text-[#C8FF00] transition-colors active:scale-90 duration-300" href="?module=overview">
 <span className="material-symbols-outlined">home</span>
 <span className="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-widest mt-1">Home</span>
 </a>

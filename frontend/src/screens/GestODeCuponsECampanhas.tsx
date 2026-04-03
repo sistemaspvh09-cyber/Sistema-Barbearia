@@ -12,8 +12,8 @@ const GestODeCuponsECampanhas: React.FC = () => {
 </div>
 <div className="flex items-center gap-6">
 <nav className="hidden md:flex gap-8">
-<a className="text-[#A0A0A0] hover:text-white transition-colors font-['Plus_Jakarta_Sans'] tracking-tight" href="#">Dashboard</a>
-<a className="text-[#A0A0A0] hover:text-white transition-colors font-['Plus_Jakarta_Sans'] tracking-tight" href="#">Marketing</a>
+<a className="text-[#A0A0A0] hover:text-white transition-colors font-['Plus_Jakarta_Sans'] tracking-tight" href="?module=overview">Dashboard</a>
+<a className="text-[#A0A0A0] hover:text-white transition-colors font-['Plus_Jakarta_Sans'] tracking-tight" href="?module=marketing&screen=dashboard-de-marketing-egrowth">Marketing</a>
 <a className="text-[#C8FF00] font-bold border-b-2 border-[#C8FF00] pb-1 font-['Plus_Jakarta_Sans'] tracking-tight" href="#">Campaigns</a>
 </nav>
 <div className="flex items-center gap-3">
@@ -36,11 +36,11 @@ const GestODeCuponsECampanhas: React.FC = () => {
 <p className="text-on-surface-variant text-xs font-medium mt-1">Premium Management</p>
 </div>
 <nav className="flex flex-col gap-2 flex-grow">
-<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:bg-white/5 mx-2 rounded-xl hover:translate-x-1 transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:bg-white/5 mx-2 rounded-xl hover:translate-x-1 transition-all duration-300" href="?module=overview">
 <span className="material-symbols-outlined">dashboard</span>
 <span className="font-['Plus_Jakarta_Sans'] font-medium text-sm">Dashboard</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:bg-white/5 mx-2 rounded-xl hover:translate-x-1 transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:bg-white/5 mx-2 rounded-xl hover:translate-x-1 transition-all duration-300" href="?module=marketing&screen=dashboard-de-marketing-egrowth">
 <span className="material-symbols-outlined">campaign</span>
 <span className="font-['Plus_Jakarta_Sans'] font-medium text-sm">Marketing</span>
 </a>
@@ -61,11 +61,11 @@ const GestODeCuponsECampanhas: React.FC = () => {
 <button className="mb-4 bg-[#C8FF00] text-[#4f6700] py-3 px-4 rounded-xl font-bold text-sm shadow-[0_0_15px_rgba(200,255,0,0.2)] hover:scale-[1.02] active:scale-95 transition-all">
                 New Campaign
             </button>
-<a className="flex items-center gap-3 px-4 py-2 text-[#A0A0A0] hover:text-white transition-colors" href="#">
+<a className="flex items-center gap-3 px-4 py-2 text-[#A0A0A0] hover:text-white transition-colors" href="?module=acesso&screen=suporte-echamados">
 <span className="material-symbols-outlined">help</span>
 <span className="font-medium text-sm">Support</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-2 text-[#A0A0A0] hover:text-white transition-colors" href="#">
+<a className="flex items-center gap-3 px-4 py-2 text-[#A0A0A0] hover:text-white transition-colors" href="?module=acesso&screen=tela-de-login">
 <span className="material-symbols-outlined">logout</span>
 <span className="font-medium text-sm">Logout</span>
 </a>
@@ -252,7 +252,7 @@ const GestODeCuponsECampanhas: React.FC = () => {
 </main>
 {/* Bottom Navigation Bar (Mobile only) */}
 <nav className="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-[#0D0D0D]/80 backdrop-blur-md md:hidden z-50 rounded-t-[1.5rem] border-t border-[#C8FF00]/15 shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] p-2 hover:text-[#C8FF00] transition-colors" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] p-2 hover:text-[#C8FF00] transition-colors" href="?module=overview">
 <span className="material-symbols-outlined">home</span>
 <span className="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-widest mt-1">Home</span>
 </a>

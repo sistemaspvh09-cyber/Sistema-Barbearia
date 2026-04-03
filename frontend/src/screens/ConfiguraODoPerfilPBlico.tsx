@@ -13,28 +13,28 @@ const ConfiguraODoPerfilPBlico: React.FC = () => {
 <p className="text-[10px] text-on-surface-variant uppercase tracking-widest font-bold">Painel de Gestão</p>
 </div>
 <nav className="flex flex-col gap-y-1">
-<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:bg-white/5 rounded-xl hover:translate-x-1 transition-all duration-300 font-['Plus_Jakarta_Sans'] text-sm font-medium" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:bg-white/5 rounded-xl hover:translate-x-1 transition-all duration-300 font-['Plus_Jakarta_Sans'] text-sm font-medium" href="?module=overview">
 <span className="material-symbols-outlined">dashboard</span> Dashboard
                 </a>
-<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:bg-white/5 rounded-xl hover:translate-x-1 transition-all duration-300 font-['Plus_Jakarta_Sans'] text-sm font-medium" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:bg-white/5 rounded-xl hover:translate-x-1 transition-all duration-300 font-['Plus_Jakarta_Sans'] text-sm font-medium" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined">calendar_month</span> Agendamentos
                 </a>
 {/* Active Tab */}
-<a className="flex items-center gap-3 px-4 py-3 bg-[#C8FF00] text-[#4f6700] rounded-xl font-bold shadow-[0_0_15px_rgba(200,255,0,0.3)] active:scale-[0.98] transition-all font-['Plus_Jakarta_Sans'] text-sm" href="#">
+<a className="flex items-center gap-3 px-4 py-3 bg-[#C8FF00] text-[#4f6700] rounded-xl font-bold shadow-[0_0_15px_rgba(200,255,0,0.3)] active:scale-[0.98] transition-all font-['Plus_Jakarta_Sans'] text-sm" href="?module=operacao&screen=gest-ode-equipe-admin">
 <span className="material-symbols-outlined">storefront</span> Perfil Público
                 </a>
-<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:bg-white/5 rounded-xl hover:translate-x-1 transition-all duration-300 font-['Plus_Jakarta_Sans'] text-sm font-medium" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:bg-white/5 rounded-xl hover:translate-x-1 transition-all duration-300 font-['Plus_Jakarta_Sans'] text-sm font-medium" href="?module=financeiro&screen=configura-ofinanceira-admin">
 <span className="material-symbols-outlined">group</span> Equipe
                 </a>
-<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:bg-white/5 rounded-xl hover:translate-x-1 transition-all duration-300 font-['Plus_Jakarta_Sans'] text-sm font-medium" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:bg-white/5 rounded-xl hover:translate-x-1 transition-all duration-300 font-['Plus_Jakarta_Sans'] text-sm font-medium" href="?module=financeiro&screen=configura-ofinanceira-admin">
 <span className="material-symbols-outlined">payments</span> Financeiro
                 </a>
 </nav>
 <div className="mt-auto pt-4 border-t border-outline-variant/10 flex flex-col gap-y-1">
-<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:bg-white/5 rounded-xl hover:translate-x-1 transition-all duration-300 font-['Plus_Jakarta_Sans'] text-sm font-medium" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:bg-white/5 rounded-xl hover:translate-x-1 transition-all duration-300 font-['Plus_Jakarta_Sans'] text-sm font-medium" href="?module=acesso&screen=suporte-echamados">
 <span className="material-symbols-outlined">help_outline</span> Suporte
                 </a>
-<a className="flex items-center gap-3 px-4 py-3 text-error hover:bg-error/10 rounded-xl hover:translate-x-1 transition-all duration-300 font-['Plus_Jakarta_Sans'] text-sm font-medium" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-error hover:bg-error/10 rounded-xl hover:translate-x-1 transition-all duration-300 font-['Plus_Jakarta_Sans'] text-sm font-medium" href="?module=acesso&screen=tela-de-login">
 <span className="material-symbols-outlined">logout</span> Sair
                 </a>
 </div>

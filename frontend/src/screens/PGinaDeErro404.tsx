@@ -45,11 +45,11 @@ const PGinaDeErro404: React.FC = () => {
 </section>
 {/* Action Section */}
 <section className="flex flex-col sm:flex-row gap-6 mt-8">
-<a className="group relative px-8 py-4 bg-primary-container text-on-primary rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(200,255,0,0.2)] hover:shadow-[0_0_30px_rgba(200,255,0,0.4)] flex items-center gap-3" href="#">
+<a className="group relative px-8 py-4 bg-primary-container text-on-primary rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(200,255,0,0.2)] hover:shadow-[0_0_30px_rgba(200,255,0,0.4)] flex items-center gap-3" href="?module=overview">
 <span className="material-symbols-outlined font-bold" data-icon="dashboard">dashboard</span>
                 Voltar ao Dashboard
             </a>
-<a className="px-8 py-4 bg-surface-container border border-outline-variant/20 text-on-surface rounded-xl font-bold text-lg transition-all duration-300 hover:bg-surface-container-high hover:text-primary-container flex items-center gap-3" href="#">
+<a className="px-8 py-4 bg-surface-container border border-outline-variant/20 text-on-surface rounded-xl font-bold text-lg transition-all duration-300 hover:bg-surface-container-high hover:text-primary-container flex items-center gap-3" href="?module=acesso&screen=suporte-echamados">
 <span className="material-symbols-outlined" data-icon="support_agent">support_agent</span>
                 Falar com Suporte
             </a>

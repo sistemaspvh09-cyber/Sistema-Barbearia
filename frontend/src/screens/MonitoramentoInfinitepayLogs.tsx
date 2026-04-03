@@ -17,11 +17,11 @@ const MonitoramentoInfinitepayLogs: React.FC = () => {
 </div>
 </div>
 <nav className="flex-1 space-y-1">
-<a className="flex items-center gap-3 px-4 py-3 text-zinc-500 hover:text-zinc-200 hover:bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-xl group" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-zinc-500 hover:text-zinc-200 hover:bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-xl group" href="?module=overview">
 <span className="material-symbols-outlined">dashboard</span>
 <span className="font-medium text-sm">Dashboard</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 text-zinc-500 hover:text-zinc-200 hover:bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-xl group" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-zinc-500 hover:text-zinc-200 hover:bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-xl group" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined">calendar_today</span>
 <span className="font-medium text-sm">Agenda</span>
 </a>
@@ -29,7 +29,7 @@ const MonitoramentoInfinitepayLogs: React.FC = () => {
 <span className="material-symbols-outlined">groups</span>
 <span className="font-medium text-sm">Clients</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 text-zinc-500 hover:text-zinc-200 hover:bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-xl group" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-zinc-500 hover:text-zinc-200 hover:bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-xl group" href="?module=operacao&screen=configura-ode-servi-os-desktop">
 <span className="material-symbols-outlined">content_cut</span>
 <span className="font-medium text-sm">Services</span>
 </a>
@@ -349,11 +349,11 @@ const MonitoramentoInfinitepayLogs: React.FC = () => {
 </main>
 {/* BottomNavBar for Mobile */}
 <nav className="md:hidden fixed bottom-0 left-0 right-0 h-16 bg-[#0D0D0D]/90 backdrop-blur-lg border-t border-white/5 flex items-center justify-around px-4 z-50">
-<a className="flex flex-col items-center gap-1 text-zinc-500" href="#">
+<a className="flex flex-col items-center gap-1 text-zinc-500" href="?module=overview">
 <span className="material-symbols-outlined text-xl">dashboard</span>
 <span className="text-[10px] font-bold">Início</span>
 </a>
-<a className="flex flex-col items-center gap-1 text-zinc-500" href="#">
+<a className="flex flex-col items-center gap-1 text-zinc-500" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined text-xl">calendar_today</span>
 <span className="text-[10px] font-bold">Agenda</span>
 </a>

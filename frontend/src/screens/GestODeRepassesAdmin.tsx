@@ -12,16 +12,16 @@ const GestODeRepassesAdmin: React.FC = () => {
 <p className="text-[#A0A0A0] text-xs font-['Plus_Jakarta_Sans'] tracking-tight font-medium">Elite Management</p>
 </div>
 <nav className="flex-1 px-4 space-y-2">
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-white hover:bg-[#ffffff08] transition-all duration-300 font-['Plus_Jakarta_Sans'] tracking-tight font-medium" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-white hover:bg-[#ffffff08] transition-all duration-300 font-['Plus_Jakarta_Sans'] tracking-tight font-medium" href="?module=overview">
 <span className="material-symbols-outlined" data-icon="dashboard">dashboard</span>
 <span>Dashboard</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-white hover:bg-[#ffffff08] transition-all duration-300 font-['Plus_Jakarta_Sans'] tracking-tight font-medium" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-white hover:bg-[#ffffff08] transition-all duration-300 font-['Plus_Jakarta_Sans'] tracking-tight font-medium" href="?module=financeiro&screen=relat-rio-de-comiss-es-por-barbeiro">
 <span className="material-symbols-outlined" data-icon="payments">payments</span>
 <span>Transações</span>
 </a>
 {/* Active Tab: Comissões */}
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#C8FF00] bg-[#C8FF0010] border-r-2 border-[#C8FF00] font-bold font-['Plus_Jakarta_Sans'] tracking-tight transition-all duration-300 scale-102 shadow-[0_0_15px_rgba(200,255,0,0.2)]" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#C8FF00] bg-[#C8FF0010] border-r-2 border-[#C8FF00] font-bold font-['Plus_Jakarta_Sans'] tracking-tight transition-all duration-300 scale-102 shadow-[0_0_15px_rgba(200,255,0,0.2)]" href="?module=financeiro&screen=relat-rio-de-comiss-es-por-barbeiro">
 <span className="material-symbols-outlined" data-icon="percent">percent</span>
 <span>Comissões</span>
 </a>
@@ -29,11 +29,11 @@ const GestODeRepassesAdmin: React.FC = () => {
 <span className="material-symbols-outlined" data-icon="groups">groups</span>
 <span>Barbeiros</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-white hover:bg-[#ffffff08] transition-all duration-300 font-['Plus_Jakarta_Sans'] tracking-tight font-medium" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-white hover:bg-[#ffffff08] transition-all duration-300 font-['Plus_Jakarta_Sans'] tracking-tight font-medium" href="?module=operacao&screen=configura-ode-servi-os-desktop">
 <span className="material-symbols-outlined" data-icon="content_cut">content_cut</span>
 <span>Serviços</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-white hover:bg-[#ffffff08] transition-all duration-300 font-['Plus_Jakarta_Sans'] tracking-tight font-medium" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-white hover:bg-[#ffffff08] transition-all duration-300 font-['Plus_Jakarta_Sans'] tracking-tight font-medium" href="?module=operacao&screen=painel-administrativo">
 <span className="material-symbols-outlined" data-icon="settings">settings</span>
 <span>Configurações</span>
 </a>
@@ -45,11 +45,11 @@ const GestODeRepassesAdmin: React.FC = () => {
             </button>
 </div>
 <div className="px-4 py-6 space-y-2">
-<a className="flex items-center gap-3 px-4 py-2 text-[#A0A0A0] hover:text-white transition-all text-sm" href="#">
+<a className="flex items-center gap-3 px-4 py-2 text-[#A0A0A0] hover:text-white transition-all text-sm" href="?module=acesso&screen=suporte-echamados">
 <span className="material-symbols-outlined" data-icon="support_agent">support_agent</span>
                 Suporte
             </a>
-<a className="flex items-center gap-3 px-4 py-2 text-error hover:text-error-dim transition-all text-sm" href="#">
+<a className="flex items-center gap-3 px-4 py-2 text-error hover:text-error-dim transition-all text-sm" href="?module=acesso&screen=tela-de-login">
 <span className="material-symbols-outlined" data-icon="logout">logout</span>
                 Sair
             </a>

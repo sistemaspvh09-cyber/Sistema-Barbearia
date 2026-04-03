@@ -130,11 +130,11 @@ const ConfiguraODeServiOsMobile: React.FC = () => {
 </main>
 {/* BottomNavBar */}
 <nav className="fixed bottom-0 w-full z-50 rounded-t-[24px] bg-[#1A1919]/70 backdrop-blur-xl border-t border-[#C8FF00]/15 shadow-[0_-4px_40px_rgba(0,0,0,0.5)] flex justify-around items-center w-full h-20 px-4 pb-safe">
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] hover:text-white transition-colors duration-300 active:scale-90 transition-all duration-300" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] hover:text-white transition-colors duration-300 active:scale-90 transition-all duration-300" href="?module=overview">
 <span className="material-symbols-outlined">home</span>
 <span className="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-wider mt-1">Início</span>
 </a>
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] hover:text-white transition-colors duration-300 active:scale-90 transition-all duration-300" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] hover:text-white transition-colors duration-300 active:scale-90 transition-all duration-300" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined">calendar_month</span>
 <span className="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-wider mt-1">Agenda</span>
 </a>
@@ -142,7 +142,7 @@ const ConfiguraODeServiOsMobile: React.FC = () => {
 <span className="material-symbols-outlined">add_circle</span>
 <span className="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-wider mt-1">Novo+</span>
 </a>
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] hover:text-white transition-colors duration-300 active:scale-90 transition-all duration-300" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] hover:text-white transition-colors duration-300 active:scale-90 transition-all duration-300" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">
 <span className="material-symbols-outlined">group</span>
 <span className="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-wider mt-1">Clientes</span>
 </a>

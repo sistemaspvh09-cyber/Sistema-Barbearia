@@ -12,28 +12,28 @@ const GestODeEquipeAdmin: React.FC = () => {
 <p className="text-[10px] uppercase tracking-[0.2em] text-on-surface-variant font-bold mt-1">Premium Management</p>
 </div>
 <nav className="flex-1 space-y-1">
-<a className="flex items-center gap-3 px-4 py-3 text-gray-400 hover:text-white transition-all duration-300 hover:bg-white/5 hover:scale-[1.02] cursor-pointer active:scale-95" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-gray-400 hover:text-white transition-all duration-300 hover:bg-white/5 hover:scale-[1.02] cursor-pointer active:scale-95" href="?module=overview">
 <span className="material-symbols-outlined">dashboard</span>
 <span className="font-medium">Dashboard</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 text-gray-400 hover:text-white transition-all duration-300 hover:bg-white/5 hover:scale-[1.02] cursor-pointer active:scale-95" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-gray-400 hover:text-white transition-all duration-300 hover:bg-white/5 hover:scale-[1.02] cursor-pointer active:scale-95" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined">calendar_month</span>
 <span className="font-medium">Agenda</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 text-gray-400 hover:text-white transition-all duration-300 hover:bg-white/5 hover:scale-[1.02] cursor-pointer active:scale-95" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-gray-400 hover:text-white transition-all duration-300 hover:bg-white/5 hover:scale-[1.02] cursor-pointer active:scale-95" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">
 <span className="material-symbols-outlined">group</span>
 <span className="font-medium">Clientes</span>
 </a>
 {/* Active Tab: Equipe */}
-<a className="flex items-center gap-3 px-4 py-3 text-[#C8FF00] bg-[#C8FF00]/10 border-r-4 border-[#C8FF00] font-bold cursor-pointer active:scale-95 duration-300" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-[#C8FF00] bg-[#C8FF00]/10 border-r-4 border-[#C8FF00] font-bold cursor-pointer active:scale-95 duration-300" href="?module=operacao&screen=gest-ode-equipe-admin">
 <span className="material-symbols-outlined">content_cut</span>
 <span className="font-medium">Equipe</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 text-gray-400 hover:text-white transition-all duration-300 hover:bg-white/5 hover:scale-[1.02] cursor-pointer active:scale-95" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-gray-400 hover:text-white transition-all duration-300 hover:bg-white/5 hover:scale-[1.02] cursor-pointer active:scale-95" href="?module=financeiro&screen=configura-ofinanceira-admin">
 <span className="material-symbols-outlined">payments</span>
 <span className="font-medium">Financeiro</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 text-gray-400 hover:text-white transition-all duration-300 hover:bg-white/5 hover:scale-[1.02] cursor-pointer active:scale-95" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-gray-400 hover:text-white transition-all duration-300 hover:bg-white/5 hover:scale-[1.02] cursor-pointer active:scale-95" href="?module=operacao&screen=painel-administrativo">
 <span className="material-symbols-outlined">settings</span>
 <span className="font-medium">Configurações</span>
 </a>

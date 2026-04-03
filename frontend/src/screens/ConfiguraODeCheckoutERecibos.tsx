@@ -11,8 +11,8 @@ const ConfiguraODeCheckoutERecibos: React.FC = () => {
 <div className="flex items-center gap-4">
 <span className="text-xl font-extrabold text-[#C8FF00] tracking-tighter">BarberPro</span>
 <nav className="hidden md:flex gap-6 ml-8">
-<a className="text-[#A0A0A0] hover:text-[#C8FF00] transition-colors duration-300 font-plus-jakarta-sans font-medium tracking-tight" href="#">Dashboard</a>
-<a className="text-[#A0A0A0] hover:text-[#C8FF00] transition-colors duration-300 font-plus-jakarta-sans font-medium tracking-tight" href="#">Financeiro</a>
+<a className="text-[#A0A0A0] hover:text-[#C8FF00] transition-colors duration-300 font-plus-jakarta-sans font-medium tracking-tight" href="?module=overview">Dashboard</a>
+<a className="text-[#A0A0A0] hover:text-[#C8FF00] transition-colors duration-300 font-plus-jakarta-sans font-medium tracking-tight" href="?module=financeiro&screen=configura-ofinanceira-admin">Financeiro</a>
 <a className="text-[#C8FF00] font-bold font-plus-jakarta-sans tracking-tight" href="#">Checkout</a>
 </nav>
 </div>
@@ -30,25 +30,25 @@ const ConfiguraODeCheckoutERecibos: React.FC = () => {
 <p className="text-[#A0A0A0] text-xs">Gestão de Alta Performance</p>
 </div>
 <nav className="flex flex-col gap-1">
-<a className="flex items-center gap-3 px-6 py-3 text-[#A0A0A0] hover:bg-[#C8FF00]/5 hover:text-[#C8FF00] transition-all duration-300 ease-in-out font-plus-jakarta-sans text-sm font-semibold" href="#">
+<a className="flex items-center gap-3 px-6 py-3 text-[#A0A0A0] hover:bg-[#C8FF00]/5 hover:text-[#C8FF00] transition-all duration-300 ease-in-out font-plus-jakarta-sans text-sm font-semibold" href="?module=overview">
 <span className="material-symbols-outlined">dashboard</span> Dashboard
             </a>
-<a className="flex items-center gap-3 px-6 py-3 text-[#A0A0A0] hover:bg-[#C8FF00]/5 hover:text-[#C8FF00] transition-all duration-300 ease-in-out font-plus-jakarta-sans text-sm font-semibold" href="#">
+<a className="flex items-center gap-3 px-6 py-3 text-[#A0A0A0] hover:bg-[#C8FF00]/5 hover:text-[#C8FF00] transition-all duration-300 ease-in-out font-plus-jakarta-sans text-sm font-semibold" href="?module=financeiro&screen=configura-ofinanceira-admin">
 <span className="material-symbols-outlined">payments</span> Financeiro
             </a>
-<a className="flex items-center gap-3 px-6 py-3 text-[#A0A0A0] hover:bg-[#C8FF00]/5 hover:text-[#C8FF00] transition-all duration-300 ease-in-out font-plus-jakarta-sans text-sm font-semibold" href="#">
+<a className="flex items-center gap-3 px-6 py-3 text-[#A0A0A0] hover:bg-[#C8FF00]/5 hover:text-[#C8FF00] transition-all duration-300 ease-in-out font-plus-jakarta-sans text-sm font-semibold" href="?module=operacao&screen=gest-ode-equipe-admin">
 <span className="material-symbols-outlined">group</span> Equipe
             </a>
-<a className="flex items-center gap-3 px-6 py-3 bg-[#C8FF00]/10 text-[#C8FF00] border-r-4 border-[#C8FF00] transition-all duration-300 ease-in-out font-plus-jakarta-sans text-sm font-semibold" href="#">
+<a className="flex items-center gap-3 px-6 py-3 bg-[#C8FF00]/10 text-[#C8FF00] border-r-4 border-[#C8FF00] transition-all duration-300 ease-in-out font-plus-jakarta-sans text-sm font-semibold" href="?module=financeiro&screen=relat-rios-de-faturamento-desktop">
 <span className="material-symbols-outlined">shopping_cart_checkout</span> Checkout
             </a>
-<a className="flex items-center gap-3 px-6 py-3 text-[#A0A0A0] hover:bg-[#C8FF00]/5 hover:text-[#C8FF00] transition-all duration-300 ease-in-out font-plus-jakarta-sans text-sm font-semibold" href="#">
+<a className="flex items-center gap-3 px-6 py-3 text-[#A0A0A0] hover:bg-[#C8FF00]/5 hover:text-[#C8FF00] transition-all duration-300 ease-in-out font-plus-jakarta-sans text-sm font-semibold" href="?module=financeiro&screen=relat-rios-de-faturamento-desktop">
 <span className="material-symbols-outlined">analytics</span> Relatórios
             </a>
 </nav>
 <div className="mt-auto px-6 flex flex-col gap-2">
-<a className="flex items-center gap-3 py-2 text-[#A0A0A0] hover:text-[#C8FF00] text-sm" href="#"><span className="material-symbols-outlined">help_center</span> Suporte</a>
-<a className="flex items-center gap-3 py-2 text-[#A0A0A0] hover:text-error text-sm" href="#"><span className="material-symbols-outlined">logout</span> Sair</a>
+<a className="flex items-center gap-3 py-2 text-[#A0A0A0] hover:text-[#C8FF00] text-sm" href="?module=acesso&screen=suporte-echamados"><span className="material-symbols-outlined">help_center</span> Suporte</a>
+<a className="flex items-center gap-3 py-2 text-[#A0A0A0] hover:text-error text-sm" href="?module=acesso&screen=tela-de-login"><span className="material-symbols-outlined">logout</span> Sair</a>
 </div>
 </aside>
 {/* Main Content */}
@@ -207,11 +207,11 @@ const ConfiguraODeCheckoutERecibos: React.FC = () => {
 </main>
 {/* BottomNavBar (Mobile Only) */}
 <nav className="md:hidden fixed bottom-0 left-0 w-full z-50 bg-[#0D0D0D]/80 backdrop-blur-lg rounded-t-3xl border-t border-[#C8FF00]/10 flex justify-around items-center px-4 h-20 pb-safe shadow-[0px_-10px_30px_rgba(0,0,0,0.8)]">
-<a className="flex flex-col items-center justify-center text-[#A0A0A0]" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0]" href="?module=overview">
 <span className="material-symbols-outlined">home</span>
 <span className="text-[10px] font-bold uppercase tracking-widest mt-1">Início</span>
 </a>
-<a className="flex flex-col items-center justify-center text-[#A0A0A0]" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0]" href="?module=financeiro&screen=configura-ofinanceira-admin">
 <span className="material-symbols-outlined">account_balance_wallet</span>
 <span className="text-[10px] font-bold uppercase tracking-widest mt-1">Financeiro</span>
 </a>

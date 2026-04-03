@@ -18,11 +18,11 @@ const RelatRioDeComissEsPorBarbeiro: React.FC = () => {
 </div>
 </div>
 <nav className="flex-1 space-y-2">
-<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:text-white transition-all duration-300 hover:bg-[#1A1919] hover:scale-[1.02] cursor-pointer active:scale-95" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:text-white transition-all duration-300 hover:bg-[#1A1919] hover:scale-[1.02] cursor-pointer active:scale-95" href="?module=overview">
 <span className="material-symbols-outlined" data-icon="dashboard">dashboard</span>
 <span className="font-medium">Dashboard</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:text-white transition-all duration-300 hover:bg-[#1A1919] hover:scale-[1.02] cursor-pointer active:scale-95" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:text-white transition-all duration-300 hover:bg-[#1A1919] hover:scale-[1.02] cursor-pointer active:scale-95" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
 <span className="font-medium">Agendamentos</span>
 </a>
@@ -30,11 +30,11 @@ const RelatRioDeComissEsPorBarbeiro: React.FC = () => {
 <span className="material-symbols-outlined" data-icon="content_cut">content_cut</span>
 <span className="font-medium">Barbeiros</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 bg-[#C8FF00]/10 text-[#C8FF00] rounded-xl font-bold border-l-4 border-[#C8FF00] transition-all duration-300 cursor-pointer active:scale-95" href="#">
+<a className="flex items-center gap-3 px-4 py-3 bg-[#C8FF00]/10 text-[#C8FF00] rounded-xl font-bold border-l-4 border-[#C8FF00] transition-all duration-300 cursor-pointer active:scale-95" href="?module=financeiro&screen=relat-rios-de-faturamento-desktop">
 <span className="material-symbols-outlined" data-icon="equalizer">equalizer</span>
 <span className="font-medium">Relatórios</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:text-white transition-all duration-300 hover:bg-[#1A1919] hover:scale-[1.02] cursor-pointer active:scale-95" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:text-white transition-all duration-300 hover:bg-[#1A1919] hover:scale-[1.02] cursor-pointer active:scale-95" href="?module=operacao&screen=painel-administrativo">
 <span className="material-symbols-outlined" data-icon="settings">settings</span>
 <span className="font-medium">Configurações</span>
 </a>
@@ -44,7 +44,7 @@ const RelatRioDeComissEsPorBarbeiro: React.FC = () => {
                 Novo Agendamento
             </button>
 <div className="pt-6 border-t border-[#ffffff0a]">
-<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:text-error transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:text-error transition-all duration-300" href="?module=acesso&screen=tela-de-login">
 <span className="material-symbols-outlined" data-icon="logout">logout</span>
 <span className="font-medium">Sair</span>
 </a>

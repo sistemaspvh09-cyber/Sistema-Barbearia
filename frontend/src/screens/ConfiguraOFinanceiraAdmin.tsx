@@ -12,7 +12,7 @@ const ConfiguraOFinanceiraAdmin: React.FC = () => {
 <p className="text-[10px] text-[#A0A0A0] uppercase tracking-widest mt-1 font-bold">Elite Management</p>
 </div>
 <nav className="flex-1 px-4 space-y-2 custom-scrollbar overflow-y-auto">
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-white hover:bg-[#ffffff08] transition-all duration-300 font-medium" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-white hover:bg-[#ffffff08] transition-all duration-300 font-medium" href="?module=overview">
 <span className="material-symbols-outlined" data-icon="dashboard">dashboard</span>
 <span className="tracking-tight">Dashboard</span>
 </a>
@@ -20,7 +20,7 @@ const ConfiguraOFinanceiraAdmin: React.FC = () => {
 <span className="material-symbols-outlined" data-icon="payments">payments</span>
 <span className="tracking-tight">Transações</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-white hover:bg-[#ffffff08] transition-all duration-300 font-medium" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-white hover:bg-[#ffffff08] transition-all duration-300 font-medium" href="?module=financeiro&screen=relat-rio-de-comiss-es-por-barbeiro">
 <span className="material-symbols-outlined" data-icon="percent">percent</span>
 <span className="tracking-tight">Comissões</span>
 </a>
@@ -28,22 +28,22 @@ const ConfiguraOFinanceiraAdmin: React.FC = () => {
 <span className="material-symbols-outlined" data-icon="groups">groups</span>
 <span className="tracking-tight">Barbeiros</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-white hover:bg-[#ffffff08] transition-all duration-300 font-medium" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-white hover:bg-[#ffffff08] transition-all duration-300 font-medium" href="?module=operacao&screen=configura-ode-servi-os-desktop">
 <span className="material-symbols-outlined" data-icon="content_cut">content_cut</span>
 <span className="tracking-tight">Serviços</span>
 </a>
 {/* Active Tab */}
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#C8FF00] bg-[#C8FF0010] border-r-2 border-[#C8FF00] font-bold transition-all duration-300 shadow-[0_0_15px_rgba(200,255,0,0.1)]" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#C8FF00] bg-[#C8FF0010] border-r-2 border-[#C8FF00] font-bold transition-all duration-300 shadow-[0_0_15px_rgba(200,255,0,0.1)]" href="?module=operacao&screen=painel-administrativo">
 <span className="material-symbols-outlined" data-icon="settings">settings</span>
 <span className="tracking-tight">Configurações</span>
 </a>
 </nav>
 <div className="px-4 py-6 border-t border-[#ffffff10] space-y-2">
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-white transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-white transition-all duration-300" href="?module=acesso&screen=suporte-echamados">
 <span className="material-symbols-outlined" data-icon="support_agent">support_agent</span>
 <span className="text-sm font-medium">Suporte</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-error transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-4 py-3 rounded-xl text-[#A0A0A0] hover:text-error transition-all duration-300" href="?module=acesso&screen=tela-de-login">
 <span className="material-symbols-outlined" data-icon="logout">logout</span>
 <span className="text-sm font-medium">Sair</span>
 </a>

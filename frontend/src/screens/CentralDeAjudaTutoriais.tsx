@@ -10,10 +10,10 @@ const CentralDeAjudaTutoriais: React.FC = () => {
 <div className="flex items-center gap-8">
 <span className="text-xl font-black text-primary-container italic tracking-tight font-headline">BarberPro</span>
 <nav className="hidden md:flex items-center gap-6">
-<a className="text-on-surface-variant hover:text-primary-container transition-all duration-300 font-medium text-sm" href="#">Dashboard</a>
-<a className="text-on-surface-variant hover:text-primary-container transition-all duration-300 font-medium text-sm" href="#">Agenda</a>
-<a className="text-on-surface-variant hover:text-primary-container transition-all duration-300 font-medium text-sm" href="#">Financeiro</a>
-<a className="text-primary-container border-b-2 border-primary-container pb-1 font-medium text-sm" href="#">Suporte</a>
+<a className="text-on-surface-variant hover:text-primary-container transition-all duration-300 font-medium text-sm" href="?module=overview">Dashboard</a>
+<a className="text-on-surface-variant hover:text-primary-container transition-all duration-300 font-medium text-sm" href="?module=agenda&screen=agenda-multi-barbeiro-admin">Agenda</a>
+<a className="text-on-surface-variant hover:text-primary-container transition-all duration-300 font-medium text-sm" href="?module=financeiro&screen=configura-ofinanceira-admin">Financeiro</a>
+<a className="text-primary-container border-b-2 border-primary-container pb-1 font-medium text-sm" href="?module=acesso&screen=suporte-echamados">Suporte</a>
 </nav>
 </div>
 <div className="flex items-center gap-4">
@@ -48,33 +48,33 @@ const CentralDeAjudaTutoriais: React.FC = () => {
             </button>
 </div>
 <nav className="flex-1 px-3 space-y-1">
-<a className="flex items-center gap-3 text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors px-4 py-3 rounded-lg font-medium text-sm" href="#">
+<a className="flex items-center gap-3 text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors px-4 py-3 rounded-lg font-medium text-sm" href="?module=overview">
 <span className="material-symbols-outlined" data-icon="dashboard">dashboard</span>
                 Dashboard
             </a>
-<a className="flex items-center gap-3 text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors px-4 py-3 rounded-lg font-medium text-sm" href="#">
+<a className="flex items-center gap-3 text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors px-4 py-3 rounded-lg font-medium text-sm" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
                 Agendamentos
             </a>
-<a className="flex items-center gap-3 text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors px-4 py-3 rounded-lg font-medium text-sm" href="#">
+<a className="flex items-center gap-3 text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors px-4 py-3 rounded-lg font-medium text-sm" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">
 <span className="material-symbols-outlined" data-icon="groups">groups</span>
                 Clientes
             </a>
-<a className="flex items-center gap-3 text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors px-4 py-3 rounded-lg font-medium text-sm" href="#">
+<a className="flex items-center gap-3 text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors px-4 py-3 rounded-lg font-medium text-sm" href="?module=financeiro&screen=configura-ofinanceira-admin">
 <span className="material-symbols-outlined" data-icon="payments">payments</span>
                 Financeiro
             </a>
-<a className="flex items-center gap-3 bg-primary-container/10 text-primary-container rounded-lg px-4 py-3 border-r-4 border-primary-container font-medium text-sm" href="#">
+<a className="flex items-center gap-3 bg-primary-container/10 text-primary-container rounded-lg px-4 py-3 border-r-4 border-primary-container font-medium text-sm" href="?module=acesso&screen=suporte-echamados">
 <span className="material-symbols-outlined" data-icon="contact_support">contact_support</span>
                 Suporte
             </a>
-<a className="flex items-center gap-3 text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors px-4 py-3 rounded-lg font-medium text-sm" href="#">
+<a className="flex items-center gap-3 text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors px-4 py-3 rounded-lg font-medium text-sm" href="?module=operacao&screen=painel-administrativo">
 <span className="material-symbols-outlined" data-icon="settings">settings</span>
                 Configurações
             </a>
 </nav>
 <div className="px-3 mt-auto space-y-1">
-<a className="flex items-center gap-3 text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors px-4 py-3 rounded-lg font-medium text-sm" href="#">
+<a className="flex items-center gap-3 text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors px-4 py-3 rounded-lg font-medium text-sm" href="?module=acesso&screen=tela-de-login">
 <span className="material-symbols-outlined" data-icon="logout">logout</span>
                 Sair
             </a>

@@ -26,19 +26,19 @@ const IntegraOGoogleAgendaAdmin: React.FC = () => {
 <p className="text-xs text-on-surface-variant mt-1 opacity-70">Premium Management</p>
 </div>
 <nav className="flex-1 px-4 space-y-2">
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 hover:bg-white/5 transition-all duration-300 rounded-xl" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 hover:bg-white/5 transition-all duration-300 rounded-xl" href="?module=overview">
 <span className="material-symbols-outlined">dashboard</span>
 <span>Dashboard</span>
 </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 hover:bg-white/5 transition-all duration-300 rounded-xl" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 hover:bg-white/5 transition-all duration-300 rounded-xl" href="?module=operacao&screen=gest-ode-equipe-admin">
 <span className="material-symbols-outlined">content_cut</span>
 <span>Barbers</span>
 </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 hover:bg-white/5 transition-all duration-300 rounded-xl" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 hover:bg-white/5 transition-all duration-300 rounded-xl" href="?module=financeiro&screen=relat-rio-de-comiss-es-por-barbeiro">
 <span className="material-symbols-outlined">payments</span>
 <span>Commission</span>
 </a>
-<a className="flex items-center gap-3 bg-[#C8FF00] text-[#4f6700] rounded-xl px-4 py-3 mx-2 transition-all duration-300 shadow-[0px_0px_20px_rgba(200,255,0,0.2)]" href="#">
+<a className="flex items-center gap-3 bg-[#C8FF00] text-[#4f6700] rounded-xl px-4 py-3 mx-2 transition-all duration-300 shadow-[0px_0px_20px_rgba(200,255,0,0.2)]" href="?module=integracoes&screen=integra-ogoogle-agenda-admin">
 <span className="material-symbols-outlined">calendar_month</span>
 <span>Calendar</span>
 </a>
@@ -49,11 +49,11 @@ const IntegraOGoogleAgendaAdmin: React.FC = () => {
                 New Appointment
             </button>
 <div className="space-y-1">
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-2 text-xs transition-colors" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-2 text-xs transition-colors" href="?module=acesso&screen=suporte-echamados">
 <span className="material-symbols-outlined text-lg">help</span>
                     Support
                 </a>
-<a className="flex items-center gap-3 text-error/70 hover:text-error px-4 py-2 text-xs transition-colors" href="#">
+<a className="flex items-center gap-3 text-error/70 hover:text-error px-4 py-2 text-xs transition-colors" href="?module=acesso&screen=tela-de-login">
 <span className="material-symbols-outlined text-lg">logout</span>
                     Logout
                 </a>

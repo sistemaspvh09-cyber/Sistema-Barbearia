@@ -11,9 +11,9 @@ const HorRiosIndividuaisDosBarbeiros: React.FC = () => {
 <div className="flex items-center gap-8">
 <span className="text-xl font-extrabold text-[#C8FF00] tracking-tighter font-['Plus_Jakarta_Sans']">BarberPro</span>
 <nav className="hidden md:flex gap-6 items-center">
-<a className="text-[#A0A0A0] font-medium text-sm hover:scale-105 hover:text-[#C8FF00] transition-all duration-300" href="#">Dashboard</a>
-<a className="text-[#A0A0A0] font-medium text-sm hover:scale-105 hover:text-[#C8FF00] transition-all duration-300" href="#">Barbeiros</a>
-<a className="text-[#C8FF00] font-bold text-sm hover:scale-105 hover:text-[#C8FF00] transition-all duration-300" href="#">Agendamentos</a>
+<a className="text-[#A0A0A0] font-medium text-sm hover:scale-105 hover:text-[#C8FF00] transition-all duration-300" href="?module=overview">Dashboard</a>
+<a className="text-[#A0A0A0] font-medium text-sm hover:scale-105 hover:text-[#C8FF00] transition-all duration-300" href="?module=agenda&screen=agenda-multi-barbeiro-admin">Barbeiros</a>
+<a className="text-[#C8FF00] font-bold text-sm hover:scale-105 hover:text-[#C8FF00] transition-all duration-300" href="?module=agenda&screen=agenda-multi-barbeiro-admin">Agendamentos</a>
 </nav>
 </div>
 <div className="flex items-center gap-4">
@@ -31,7 +31,7 @@ const HorRiosIndividuaisDosBarbeiros: React.FC = () => {
 <p className="text-[#A0A0A0] text-xs font-semibold uppercase tracking-widest">Gestão de Unidade</p>
 </div>
 <nav className="flex-1 space-y-1">
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 mx-2 hover:bg-[#ffffff]/5 rounded-xl transition-all duration-300" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 mx-2 hover:bg-[#ffffff]/5 rounded-xl transition-all duration-300" href="?module=overview">
 <span className="material-symbols-outlined">dashboard</span>
 <span className="font-['Plus_Jakarta_Sans'] font-semibold text-sm">Dashboard</span>
 </a>
@@ -39,15 +39,15 @@ const HorRiosIndividuaisDosBarbeiros: React.FC = () => {
 <span className="material-symbols-outlined">content_cut</span>
 <span className="font-['Plus_Jakarta_Sans'] font-semibold text-sm">Barbeiros</span>
 </a>
-<a className="flex items-center gap-3 bg-[#C8FF00] text-[#4f6700] rounded-xl mx-2 px-4 py-3 shadow-[0px_0px_20px_rgba(200,255,0,0.3)] scale-100" href="#">
+<a className="flex items-center gap-3 bg-[#C8FF00] text-[#4f6700] rounded-xl mx-2 px-4 py-3 shadow-[0px_0px_20px_rgba(200,255,0,0.3)] scale-100" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined">calendar_month</span>
 <span className="font-['Plus_Jakarta_Sans'] font-semibold text-sm">Agendamentos</span>
 </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 mx-2 hover:bg-[#ffffff]/5 rounded-xl transition-all duration-300" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 mx-2 hover:bg-[#ffffff]/5 rounded-xl transition-all duration-300" href="?module=financeiro&screen=relat-rios-de-faturamento-desktop">
 <span className="material-symbols-outlined">analytics</span>
 <span className="font-['Plus_Jakarta_Sans'] font-semibold text-sm">Relatórios</span>
 </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 mx-2 hover:bg-[#ffffff]/5 rounded-xl transition-all duration-300" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 mx-2 hover:bg-[#ffffff]/5 rounded-xl transition-all duration-300" href="?module=operacao&screen=painel-administrativo">
 <span className="material-symbols-outlined">settings</span>
 <span className="font-['Plus_Jakarta_Sans'] font-semibold text-sm">Configurações</span>
 </a>

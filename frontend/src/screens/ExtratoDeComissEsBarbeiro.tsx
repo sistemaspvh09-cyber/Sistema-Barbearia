@@ -134,19 +134,19 @@ const ExtratoDeComissEsBarbeiro: React.FC = () => {
 </main>
 {/* BottomNavBar */}
 <nav className="bg-[#1A1919]/80 backdrop-blur-lg fixed bottom-0 w-full rounded-t-[24px] z-50 border-t border-[#C8FF00]/10 shadow-[0_-10px_40px_rgba(200,255,0,0.05)] flex justify-around items-center h-20 pb-safe px-2">
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] px-4 py-2 hover:text-[#C8FF00] transition-all duration-300 active:scale-90 cubic-bezier(0.4,0,0.2,1)" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] px-4 py-2 hover:text-[#C8FF00] transition-all duration-300 active:scale-90 cubic-bezier(0.4,0,0.2,1)" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
 <span className="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-wider mt-1">Agenda</span>
 </a>
-<a className="flex flex-col items-center justify-center text-[#C8FF00] bg-[#C8FF00]/10 rounded-2xl px-4 py-2 shadow-[0_0_15px_rgba(200,255,0,0.2)] active:scale-90 transition-transform cubic-bezier(0.4,0,0.2,1)" href="#">
+<a className="flex flex-col items-center justify-center text-[#C8FF00] bg-[#C8FF00]/10 rounded-2xl px-4 py-2 shadow-[0_0_15px_rgba(200,255,0,0.2)] active:scale-90 transition-transform cubic-bezier(0.4,0,0.2,1)" href="?module=financeiro&screen=relat-rio-de-comiss-es-por-barbeiro">
 <span className="material-symbols-outlined" data-icon="payments" style={{ fontVariationSettings: "'FILL' 1" }}>payments</span>
 <span className="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-wider mt-1">Comissões</span>
 </a>
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] px-4 py-2 hover:text-[#C8FF00] transition-all duration-300 active:scale-90 cubic-bezier(0.4,0,0.2,1)" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] px-4 py-2 hover:text-[#C8FF00] transition-all duration-300 active:scale-90 cubic-bezier(0.4,0,0.2,1)" href="?module=operacao&screen=configura-ode-servi-os-desktop">
 <span className="material-symbols-outlined" data-icon="content_cut">content_cut</span>
 <span className="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-wider mt-1">Serviços</span>
 </a>
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] px-4 py-2 hover:text-[#C8FF00] transition-all duration-300 active:scale-90 cubic-bezier(0.4,0,0.2,1)" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] px-4 py-2 hover:text-[#C8FF00] transition-all duration-300 active:scale-90 cubic-bezier(0.4,0,0.2,1)" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">
 <span className="material-symbols-outlined" data-icon="person">person</span>
 <span className="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-wider mt-1">Perfil</span>
 </a>

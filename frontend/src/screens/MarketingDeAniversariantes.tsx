@@ -18,29 +18,29 @@ const MarketingDeAniversariantes: React.FC = () => {
 </div>
 </div>
 <nav className="flex-1 space-y-2">
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-[#C8FF00] px-4 py-3 hover:bg-[#1A1919] rounded-lg transition-all duration-300" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-[#C8FF00] px-4 py-3 hover:bg-[#1A1919] rounded-lg transition-all duration-300" href="?module=overview">
 <span className="material-symbols-outlined" data-icon="dashboard">dashboard</span>
 <span className="font-medium">Dashboard</span>
 </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-[#C8FF00] px-4 py-3 hover:bg-[#1A1919] rounded-lg transition-all duration-300" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-[#C8FF00] px-4 py-3 hover:bg-[#1A1919] rounded-lg transition-all duration-300" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
 <span className="font-medium">Agendamentos</span>
 </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-[#C8FF00] px-4 py-3 hover:bg-[#1A1919] rounded-lg transition-all duration-300" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-[#C8FF00] px-4 py-3 hover:bg-[#1A1919] rounded-lg transition-all duration-300" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">
 <span className="material-symbols-outlined" data-icon="groups">groups</span>
 <span className="font-medium">Clientes</span>
 </a>
-<a className="flex items-center gap-3 bg-[#C8FF00] text-[#4f6700] rounded-xl px-4 py-3 shadow-[0_0_20px_rgba(200,255,0,0.3)] transform scale-[1.02] transition-all duration-300" href="#">
+<a className="flex items-center gap-3 bg-[#C8FF00] text-[#4f6700] rounded-xl px-4 py-3 shadow-[0_0_20px_rgba(200,255,0,0.3)] transform scale-[1.02] transition-all duration-300" href="?module=marketing&screen=dashboard-de-marketing-egrowth">
 <span className="material-symbols-outlined" data-icon="celebration" style={{ fontVariationSettings: "'FILL' 1" }}>celebration</span>
 <span className="font-bold">Marketing</span>
 </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-[#C8FF00] px-4 py-3 hover:bg-[#1A1919] rounded-lg transition-all duration-300" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-[#C8FF00] px-4 py-3 hover:bg-[#1A1919] rounded-lg transition-all duration-300" href="?module=financeiro&screen=configura-ofinanceira-admin">
 <span className="material-symbols-outlined" data-icon="payments">payments</span>
 <span className="font-medium">Financeiro</span>
 </a>
 </nav>
 <div className="mt-auto pt-6 border-t border-outline-variant/20 space-y-2">
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-[#C8FF00] px-4 py-3 transition-colors" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-[#C8FF00] px-4 py-3 transition-colors" href="?module=acesso&screen=suporte-echamados">
 <span className="material-symbols-outlined" data-icon="help_center">help_center</span>
 <span className="text-sm font-medium">Suporte</span>
 </a>
@@ -303,7 +303,7 @@ Esperamos você!</textarea>
 </main>
 {/* Bottom Navigation (Mobile Only) */}
 <nav className="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-[#0D0D0D]/80 backdrop-blur-lg border-t border-[#C8FF00]/10 z-50 rounded-t-[24px] shadow-[0_-10px_40px_rgba(0,0,0,0.5)]">
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] p-2" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] p-2" href="?module=overview">
 <span className="material-symbols-outlined" data-icon="home">home</span>
 <span className="text-[10px] font-bold uppercase tracking-widest mt-1">Home</span>
 </a>
@@ -311,7 +311,7 @@ Esperamos você!</textarea>
 <span className="material-symbols-outlined" data-icon="cake">cake</span>
 <span className="text-[10px] font-bold uppercase tracking-widest mt-1">Nívers</span>
 </a>
-<a className="flex flex-col items-center justify-center bg-[#C8FF00] text-[#4f6700] rounded-2xl p-2 scale-110 shadow-lg shadow-primary-container/20" href="#">
+<a className="flex flex-col items-center justify-center bg-[#C8FF00] text-[#4f6700] rounded-2xl p-2 scale-110 shadow-lg shadow-primary-container/20" href="?module=marketing&screen=dashboard-de-marketing-egrowth">
 <span className="material-symbols-outlined" data-icon="campaign" style={{ fontVariationSettings: "'FILL' 1" }}>campaign</span>
 <span className="text-[10px] font-bold uppercase tracking-widest mt-1">Marketing</span>
 </a>

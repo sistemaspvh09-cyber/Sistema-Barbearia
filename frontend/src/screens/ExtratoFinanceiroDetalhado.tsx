@@ -10,10 +10,10 @@ const ExtratoFinanceiroDetalhado: React.FC = () => {
 <div className="flex items-center gap-8">
 <span className="text-xl font-extrabold tracking-tighter text-[#C8FF00]">BarberPro</span>
 <nav className="hidden md:flex items-center gap-6">
-<a className="text-[#A0A0A0] font-medium hover:text-[#C8FF00] hover:scale-105 transition-all duration-300" href="#">Dashboard</a>
-<a className="text-[#A0A0A0] font-medium hover:text-[#C8FF00] hover:scale-105 transition-all duration-300" href="#">Agenda</a>
-<a className="text-[#C8FF00] font-bold border-b-2 border-[#C8FF00] pb-1 hover:scale-105 transition-all duration-300" href="#">Financeiro</a>
-<a className="text-[#A0A0A0] font-medium hover:text-[#C8FF00] hover:scale-105 transition-all duration-300" href="#">Equipe</a>
+<a className="text-[#A0A0A0] font-medium hover:text-[#C8FF00] hover:scale-105 transition-all duration-300" href="?module=overview">Dashboard</a>
+<a className="text-[#A0A0A0] font-medium hover:text-[#C8FF00] hover:scale-105 transition-all duration-300" href="?module=agenda&screen=agenda-multi-barbeiro-admin">Agenda</a>
+<a className="text-[#C8FF00] font-bold border-b-2 border-[#C8FF00] pb-1 hover:scale-105 transition-all duration-300" href="?module=financeiro&screen=configura-ofinanceira-admin">Financeiro</a>
+<a className="text-[#A0A0A0] font-medium hover:text-[#C8FF00] hover:scale-105 transition-all duration-300" href="?module=operacao&screen=gest-ode-equipe-admin">Equipe</a>
 </nav>
 </div>
 <div className="flex items-center gap-4">
@@ -35,23 +35,23 @@ const ExtratoFinanceiroDetalhado: React.FC = () => {
 <p className="text-[10px] text-on-surface-variant uppercase tracking-widest font-bold">Premium Management</p>
 </div>
 <div className="flex-1 space-y-1">
-<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 mx-2 hover:bg-[#C8FF00]/10 hover:text-[#C8FF00] transition-colors duration-300 font-semibold text-sm" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 mx-2 hover:bg-[#C8FF00]/10 hover:text-[#C8FF00] transition-colors duration-300 font-semibold text-sm" href="?module=overview">
 <span className="material-symbols-outlined" data-icon="dashboard">dashboard</span>
                 Dashboard
             </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 mx-2 hover:bg-[#C8FF00]/10 hover:text-[#C8FF00] transition-colors duration-300 font-semibold text-sm" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 mx-2 hover:bg-[#C8FF00]/10 hover:text-[#C8FF00] transition-colors duration-300 font-semibold text-sm" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
                 Agenda
             </a>
-<a className="flex items-center gap-3 bg-[#C8FF00] text-[#4f6700] rounded-xl px-4 py-3 mx-2 shadow-[0_0_20px_rgba(200,255,0,0.2)] font-semibold text-sm active:scale-[0.98] transition-all" href="#">
+<a className="flex items-center gap-3 bg-[#C8FF00] text-[#4f6700] rounded-xl px-4 py-3 mx-2 shadow-[0_0_20px_rgba(200,255,0,0.2)] font-semibold text-sm active:scale-[0.98] transition-all" href="?module=financeiro&screen=configura-ofinanceira-admin">
 <span className="material-symbols-outlined" data-icon="payments">payments</span>
                 Financeiro
             </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 mx-2 hover:bg-[#C8FF00]/10 hover:text-[#C8FF00] transition-colors duration-300 font-semibold text-sm" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 mx-2 hover:bg-[#C8FF00]/10 hover:text-[#C8FF00] transition-colors duration-300 font-semibold text-sm" href="?module=operacao&screen=gest-ode-equipe-admin">
 <span className="material-symbols-outlined" data-icon="groups">groups</span>
                 Equipe
             </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 mx-2 hover:bg-[#C8FF00]/10 hover:text-[#C8FF00] transition-colors duration-300 font-semibold text-sm" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 mx-2 hover:bg-[#C8FF00]/10 hover:text-[#C8FF00] transition-colors duration-300 font-semibold text-sm" href="?module=operacao&screen=configura-ode-servi-os-desktop">
 <span className="material-symbols-outlined" data-icon="content_cut">content_cut</span>
                 Serviços
             </a>
@@ -60,11 +60,11 @@ const ExtratoFinanceiroDetalhado: React.FC = () => {
 <button className="w-full bg-[#C8FF00] text-[#4f6700] rounded-xl py-3 font-bold text-sm shadow-lg mb-6 active:scale-95 transition-transform">
                 Novo Agendamento
             </button>
-<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 hover:text-[#C8FF00] transition-colors text-sm font-semibold" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 hover:text-[#C8FF00] transition-colors text-sm font-semibold" href="?module=acesso&screen=suporte-echamados">
 <span className="material-symbols-outlined" data-icon="support_agent">support_agent</span>
                 Suporte
             </a>
-<a className="flex items-center gap-3 text-error-dim px-4 py-3 hover:text-error transition-colors text-sm font-semibold" href="#">
+<a className="flex items-center gap-3 text-error-dim px-4 py-3 hover:text-error transition-colors text-sm font-semibold" href="?module=acesso&screen=tela-de-login">
 <span className="material-symbols-outlined" data-icon="logout">logout</span>
                 Sair
             </a>
@@ -344,11 +344,11 @@ const ExtratoFinanceiroDetalhado: React.FC = () => {
 </main>
 {/* Bottom Navigation Shell (Mobile Only) */}
 <nav className="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-[#1A1919]/80 backdrop-blur-md border-t border-[#C8FF00]/10 shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] p-2 hover:text-[#C8FF00] transition-transform" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] p-2 hover:text-[#C8FF00] transition-transform" href="?module=overview">
 <span className="material-symbols-outlined mb-1" data-icon="home">home</span>
 <span className="text-[10px] font-bold uppercase tracking-widest">Home</span>
 </a>
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] p-2 hover:text-[#C8FF00] transition-transform" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] p-2 hover:text-[#C8FF00] transition-transform" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined mb-1" data-icon="event_note">event_note</span>
 <span className="text-[10px] font-bold uppercase tracking-widest">Agenda</span>
 </a>

@@ -12,23 +12,23 @@ const NotificaEsDeEstoqueViaWhatsapp: React.FC = () => {
 <p className="text-on-surface-variant text-xs mt-1 uppercase tracking-widest opacity-60">Premium Management</p>
 </div>
 <div className="flex-1 px-4 space-y-2">
-<a className="flex items-center gap-4 px-4 py-3 text-gray-500 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors rounded-xl duration-300" href="#">
+<a className="flex items-center gap-4 px-4 py-3 text-gray-500 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors rounded-xl duration-300" href="?module=overview">
 <span className="material-symbols-outlined">dashboard</span>
 <span className="font-medium text-sm">Dashboard</span>
 </a>
-<a className="flex items-center gap-4 px-4 py-3 text-gray-500 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors rounded-xl duration-300" href="#">
+<a className="flex items-center gap-4 px-4 py-3 text-gray-500 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors rounded-xl duration-300" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined">calendar_today</span>
 <span className="font-medium text-sm">Agendamentos</span>
 </a>
-<a className="flex items-center gap-4 px-4 py-3 text-[#C8FF00] border-r-2 border-[#C8FF00] bg-gradient-to-r from-[#C8FF00]/10 to-transparent rounded-r-none rounded-xl" href="#">
+<a className="flex items-center gap-4 px-4 py-3 text-[#C8FF00] border-r-2 border-[#C8FF00] bg-gradient-to-r from-[#C8FF00]/10 to-transparent rounded-r-none rounded-xl" href="?module=operacao&screen=gest-ode-estoque-desktop">
 <span className="material-symbols-outlined">inventory_2</span>
 <span className="font-medium text-sm">Estoque</span>
 </a>
-<a className="flex items-center gap-4 px-4 py-3 text-gray-500 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors rounded-xl duration-300" href="#">
+<a className="flex items-center gap-4 px-4 py-3 text-gray-500 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors rounded-xl duration-300" href="?module=financeiro&screen=configura-ofinanceira-admin">
 <span className="material-symbols-outlined">payments</span>
 <span className="font-medium text-sm">Financeiro</span>
 </a>
-<a className="flex items-center gap-4 px-4 py-3 text-gray-500 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors rounded-xl duration-300" href="#">
+<a className="flex items-center gap-4 px-4 py-3 text-gray-500 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors rounded-xl duration-300" href="?module=operacao&screen=painel-administrativo">
 <span className="material-symbols-outlined">settings</span>
 <span className="font-medium text-sm">Configurações</span>
 </a>
@@ -38,11 +38,11 @@ const NotificaEsDeEstoqueViaWhatsapp: React.FC = () => {
                 Novo Agendamento
             </button>
 <div className="mt-6 flex flex-col gap-2">
-<a className="flex items-center gap-4 px-4 py-2 text-gray-500 hover:text-[#C8FF00] text-sm" href="#">
+<a className="flex items-center gap-4 px-4 py-2 text-gray-500 hover:text-[#C8FF00] text-sm" href="?module=acesso&screen=suporte-echamados">
 <span className="material-symbols-outlined text-base">help_outline</span>
                     Suporte
                 </a>
-<a className="flex items-center gap-4 px-4 py-2 text-gray-500 hover:text-error text-sm" href="#">
+<a className="flex items-center gap-4 px-4 py-2 text-gray-500 hover:text-error text-sm" href="?module=acesso&screen=tela-de-login">
 <span className="material-symbols-outlined text-base">logout</span>
                     Sair
                 </a>
@@ -215,11 +215,11 @@ const NotificaEsDeEstoqueViaWhatsapp: React.FC = () => {
 </main>
 {/* Bottom Navigation Bar (Mobile) */}
 <nav className="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center pt-3 pb-6 px-4 bg-[#0D0D0D]/80 backdrop-blur-md border-t border-[#C8FF00]/20 rounded-t-[24px] z-50 shadow-[0_-10px_40px_rgba(200,255,0,0.05)]">
-<a className="flex flex-col items-center justify-center text-gray-500 active:bg-[#C8FF00]/5 p-2 transition-all" href="#">
+<a className="flex flex-col items-center justify-center text-gray-500 active:bg-[#C8FF00]/5 p-2 transition-all" href="?module=overview">
 <span className="material-symbols-outlined">home</span>
 <span className="text-[10px] font-bold uppercase tracking-widest mt-1">Início</span>
 </a>
-<a className="flex flex-col items-center justify-center text-[#C8FF00] drop-shadow-[0_0_8px_rgba(200,255,0,0.6)] p-2 transition-all" href="#">
+<a className="flex flex-col items-center justify-center text-[#C8FF00] drop-shadow-[0_0_8px_rgba(200,255,0,0.6)] p-2 transition-all" href="?module=operacao&screen=gest-ode-estoque-desktop">
 <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>inventory_2</span>
 <span className="text-[10px] font-bold uppercase tracking-widest mt-1">Estoque</span>
 </a>
@@ -227,7 +227,7 @@ const NotificaEsDeEstoqueViaWhatsapp: React.FC = () => {
 <span className="material-symbols-outlined">notifications_active</span>
 <span className="text-[10px] font-bold uppercase tracking-widest mt-1">Alertas</span>
 </a>
-<a className="flex flex-col items-center justify-center text-gray-500 active:bg-[#C8FF00]/5 p-2 transition-all" href="#">
+<a className="flex flex-col items-center justify-center text-gray-500 active:bg-[#C8FF00]/5 p-2 transition-all" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">
 <span className="material-symbols-outlined">person</span>
 <span className="text-[10px] font-bold uppercase tracking-widest mt-1">Perfil</span>
 </a>

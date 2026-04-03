@@ -1,8 +1,27 @@
 
 import React, { useState } from 'react';
 
+const WEEK_DAYS = ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom'];
+const MONTHS_PT = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
+
+function getWeekDays(offsetWeeks: number) {
+  const today = new Date();
+  const dow = today.getDay(); // 0=Dom
+  const monday = new Date(today);
+  monday.setDate(today.getDate() - (dow === 0 ? 6 : dow - 1) + offsetWeeks * 7);
+  return WEEK_DAYS.map((label, i) => {
+    const d = new Date(monday);
+    d.setDate(monday.getDate() + i);
+    return { label, day: d.getDate(), month: d.getMonth(), year: d.getFullYear(), isToday: d.toDateString() === today.toDateString() };
+  });
+}
+
 const AgendaPremium: React.FC = () => {
   const [modalOpen, setModalOpen] = useState(false);
+  const [weekOffset, setWeekOffset] = useState(0);
+  const days = getWeekDays(weekOffset);
+  const weekLabel = `${days[0].day} — ${days[6].day} de ${MONTHS_PT[days[6].month]}, ${days[6].year}`;
+  const todayInput = new Date().toISOString().split('T')[0];
 
   return (
     <div className="min-h-screen bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container">
@@ -89,10 +108,10 @@ const AgendaPremium: React.FC = () => {
 <div>
 <h2 className="text-4xl font-black tracking-tighter text-on-surface mb-2">Agenda Semanal</h2>
 <div className="flex items-center gap-4 text-on-surface-variant">
-<button className="p-2 hover:bg-surface-container rounded-lg transition-colors"><span className="material-symbols-outlined">chevron_left</span></button>
-<span className="text-lg font-bold text-on-surface">12 — 18 de Maio, 2024</span>
-<button className="p-2 hover:bg-surface-container rounded-lg transition-colors"><span className="material-symbols-outlined">chevron_right</span></button>
-<button className="px-4 py-1.5 bg-surface-container-high rounded-full text-xs font-bold uppercase tracking-wider text-white">Hoje</button>
+<button onClick={() => setWeekOffset(o => o - 1)} className="p-2 hover:bg-surface-container rounded-lg transition-colors"><span className="material-symbols-outlined">chevron_left</span></button>
+<span className="text-lg font-bold text-on-surface">{weekLabel}</span>
+<button onClick={() => setWeekOffset(o => o + 1)} className="p-2 hover:bg-surface-container rounded-lg transition-colors"><span className="material-symbols-outlined">chevron_right</span></button>
+<button onClick={() => setWeekOffset(0)} className="px-4 py-1.5 bg-surface-container-high rounded-full text-xs font-bold uppercase tracking-wider text-white">Hoje</button>
 </div>
 </div>
 {/* Filters Bar */}
@@ -119,34 +138,12 @@ const AgendaPremium: React.FC = () => {
 {/* Calendar Header Days */}
 <div className="calendar-grid border-b border-white/5 bg-surface-container-high/50">
 <div className="p-4"></div>
-<div className="p-4 text-center border-l border-white/5">
-<p className="text-[10px] font-black text-on-surface-variant uppercase tracking-widest">Seg</p>
-<p className="text-2xl font-black">12</p>
-</div>
-<div className="p-4 text-center border-l border-white/5 bg-primary-container/5">
-<p className="text-[10px] font-black text-primary-fixed uppercase tracking-widest">Ter</p>
-<p className="text-2xl font-black text-primary-fixed">13</p>
-</div>
-<div className="p-4 text-center border-l border-white/5">
-<p className="text-[10px] font-black text-on-surface-variant uppercase tracking-widest">Qua</p>
-<p className="text-2xl font-black">14</p>
-</div>
-<div className="p-4 text-center border-l border-white/5">
-<p className="text-[10px] font-black text-on-surface-variant uppercase tracking-widest">Qui</p>
-<p className="text-2xl font-black">15</p>
-</div>
-<div className="p-4 text-center border-l border-white/5">
-<p className="text-[10px] font-black text-on-surface-variant uppercase tracking-widest">Sex</p>
-<p className="text-2xl font-black">16</p>
-</div>
-<div className="p-4 text-center border-l border-white/5">
-<p className="text-[10px] font-black text-on-surface-variant uppercase tracking-widest">Sáb</p>
-<p className="text-2xl font-black">17</p>
-</div>
-<div className="p-4 text-center border-l border-white/5 opacity-40">
-<p className="text-[10px] font-black text-on-surface-variant uppercase tracking-widest">Dom</p>
-<p className="text-2xl font-black">18</p>
-</div>
+{days.map((d) => (
+  <div key={d.label} className={`p-4 text-center border-l border-white/5 ${d.isToday ? 'bg-primary-container/5' : ''} ${d.label === 'Dom' ? 'opacity-40' : ''}`}>
+    <p className={`text-[10px] font-black uppercase tracking-widest ${d.isToday ? 'text-primary-fixed' : 'text-on-surface-variant'}`}>{d.label}</p>
+    <p className={`text-2xl font-black ${d.isToday ? 'text-primary-fixed' : ''}`}>{d.day}</p>
+  </div>
+))}
 </div>
 {/* Calendar Body Grid */}
 <div className="h-[600px] overflow-y-auto relative custom-scrollbar">
@@ -257,7 +254,7 @@ const AgendaPremium: React.FC = () => {
 <label className="text-xs font-black uppercase tracking-widest text-primary-fixed">Data</label>
 <div className="relative">
 <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant">calendar_today</span>
-<input className="w-full pl-12 pr-6 py-4 bg-surface-container-low glass-border rounded-2xl focus:ring-2 focus:ring-primary-container outline-none text-white appearance-none" type="date" value="2024-05-13"/>
+<input className="w-full pl-12 pr-6 py-4 bg-surface-container-low glass-border rounded-2xl focus:ring-2 focus:ring-primary-container outline-none text-white appearance-none" type="date" defaultValue={todayInput}/>
 </div>
 </div>
 <div className="space-y-4">

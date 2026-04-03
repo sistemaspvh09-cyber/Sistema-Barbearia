@@ -144,22 +144,22 @@ const HistRicoDeAgendamentosCliente: React.FC = () => {
 {/* BottomNavBar */}
 <nav className="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-[#1A1919]/70 backdrop-blur-xl border-t border-[#C8FF00]/15 rounded-t-[24px] z-50 shadow-[0_-10px_40px_rgba(0,0,0,0.5)]">
 {/* Início */}
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] px-4 py-2 hover:text-[#C8FF00] transition-colors duration-300 active:scale-90" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] px-4 py-2 hover:text-[#C8FF00] transition-colors duration-300 active:scale-90" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined mb-1">home</span>
 <span className="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-wider">Início</span>
 </a>
 {/* Agenda */}
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] px-4 py-2 hover:text-[#C8FF00] transition-colors duration-300 active:scale-90" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] px-4 py-2 hover:text-[#C8FF00] transition-colors duration-300 active:scale-90" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined mb-1">calendar_today</span>
 <span className="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-wider">Agenda</span>
 </a>
 {/* Histórico (ACTIVE) */}
-<a className="flex flex-col items-center justify-center text-[#C8FF00] bg-[#C8FF00]/10 rounded-2xl px-4 py-2 shadow-[0_0_20px_rgba(200,255,0,0.2)] active:scale-90 transition-all duration-300" href="#">
+<a className="flex flex-col items-center justify-center text-[#C8FF00] bg-[#C8FF00]/10 rounded-2xl px-4 py-2 shadow-[0_0_20px_rgba(200,255,0,0.2)] active:scale-90 transition-all duration-300" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">
 <span className="material-symbols-outlined mb-1">history</span>
 <span className="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-wider">Histórico</span>
 </a>
 {/* Perfil */}
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] px-4 py-2 hover:text-[#C8FF00] transition-colors duration-300 active:scale-90" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] px-4 py-2 hover:text-[#C8FF00] transition-colors duration-300 active:scale-90" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">
 <span className="material-symbols-outlined mb-1">person</span>
 <span className="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-wider">Perfil</span>
 </a>

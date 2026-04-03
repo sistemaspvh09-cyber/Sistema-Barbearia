@@ -129,9 +129,9 @@ const OnboardingDeBarbeiro: React.FC = () => {
 <span className="text-xl font-bold text-white">BarberPro</span>
 <p className="font-body text-sm text-gray-500">© 2024 BarberPro. A Estética da Precisão.</p>
 <div className="flex gap-6">
-<a className="text-gray-500 hover:text-primary-container transition-colors text-sm" href="#">Termos</a>
-<a className="text-gray-500 hover:text-primary-container transition-colors text-sm" href="#">Privacidade</a>
-<a className="text-gray-500 hover:text-primary-container transition-colors text-sm" href="#">Suporte</a>
+<a className="text-gray-500 hover:text-primary-container transition-colors text-sm" href="?module=acesso&screen=suporte-echamados">Termos</a>
+<a className="text-gray-500 hover:text-primary-container transition-colors text-sm" href="?module=acesso&screen=suporte-echamados">Privacidade</a>
+<a className="text-gray-500 hover:text-primary-container transition-colors text-sm" href="?module=acesso&screen=suporte-echamados">Suporte</a>
 </div>
 </div>
 </footer>

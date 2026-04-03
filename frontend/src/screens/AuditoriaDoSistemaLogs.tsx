@@ -17,16 +17,16 @@ const AuditoriaDoSistemaLogs: React.FC = () => {
 </div>
 </div>
 <nav className="flex-1 flex flex-col gap-1 overflow-y-auto">
-<a className="flex items-center gap-3 px-4 py-3 text-zinc-500 hover:bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-xl font-medium text-sm" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-zinc-500 hover:bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-xl font-medium text-sm" href="?module=overview">
 <span className="material-symbols-outlined">dashboard</span> Dashboard
             </a>
-<a className="flex items-center gap-3 px-4 py-3 text-zinc-500 hover:bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-xl font-medium text-sm" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-zinc-500 hover:bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-xl font-medium text-sm" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined">calendar_today</span> Agenda
             </a>
-<a className="flex items-center gap-3 px-4 py-3 text-zinc-500 hover:bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-xl font-medium text-sm" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-zinc-500 hover:bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-xl font-medium text-sm" href="?module=operacao&screen=configura-ode-servi-os-desktop">
 <span className="material-symbols-outlined">groups</span> Clients
             </a>
-<a className="flex items-center gap-3 px-4 py-3 text-zinc-500 hover:bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-xl font-medium text-sm" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-zinc-500 hover:bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-xl font-medium text-sm" href="?module=operacao&screen=configura-ode-servi-os-desktop">
 <span className="material-symbols-outlined">content_cut</span> Services
             </a>
 <a className="flex items-center gap-3 px-4 py-3 text-zinc-500 hover:bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-xl font-medium text-sm" href="#">

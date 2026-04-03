@@ -87,20 +87,20 @@ const RedefinirSenhaMobile: React.FC = () => {
 {/* The prompt overrides the 'Linear/Transactional' suppression rule because it explicitly asked for it */}
 <nav className="bg-[#1A1919]/80 backdrop-blur-lg text-[#C8FF00] text-[10px] font-bold tracking-wide uppercase fixed bottom-0 w-full z-50 rounded-t-[24px] border-t border-[#C8FF00]/10 shadow-[0_-10px_40px_rgba(0,0,0,0.5)]">
 <div className="fixed bottom-0 left-0 w-full flex justify-around items-center h-20 px-4 pb-safe">
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] hover:bg-[#C8FF00]/5 transition-all active:scale-90 duration-300" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] hover:bg-[#C8FF00]/5 transition-all active:scale-90 duration-300" href="?module=overview">
 <span className="material-symbols-outlined mb-1">grid_view</span>
 <span>Início</span>
 </a>
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] hover:bg-[#C8FF00]/5 transition-all active:scale-90 duration-300" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] hover:bg-[#C8FF00]/5 transition-all active:scale-90 duration-300" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined mb-1">event_available</span>
 <span>Agenda</span>
 </a>
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] hover:bg-[#C8FF00]/5 transition-all active:scale-90 duration-300" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] hover:bg-[#C8FF00]/5 transition-all active:scale-90 duration-300" href="?module=operacao&screen=configura-ode-servi-os-desktop">
 <span className="material-symbols-outlined mb-1">content_cut</span>
 <span>Serviços</span>
 </a>
 {/* Perfil is Active because Reset Password is an Account-related action */}
-<a className="flex flex-col items-center justify-center text-[#C8FF00] drop-shadow-[0_0_8px_rgba(200,255,0,0.6)] active:scale-90 transition-all duration-300" href="#">
+<a className="flex flex-col items-center justify-center text-[#C8FF00] drop-shadow-[0_0_8px_rgba(200,255,0,0.6)] active:scale-90 transition-all duration-300" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">
 <span className="material-symbols-outlined mb-1" style={{ fontVariationSettings: "'FILL' 1" }}>person</span>
 <span>Perfil</span>
 </a>

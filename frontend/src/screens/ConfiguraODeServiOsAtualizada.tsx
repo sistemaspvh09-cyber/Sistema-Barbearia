@@ -17,23 +17,23 @@ const ConfiguraODeServiOsAtualizada: React.FC = () => {
 </div>
 </div>
 <nav className="flex-1 space-y-1">
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 mx-2 transition-all hover:bg-[#ffffff]/5 rounded-xl group" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 mx-2 transition-all hover:bg-[#ffffff]/5 rounded-xl group" href="?module=overview">
 <span className="material-symbols-outlined" data-icon="dashboard">dashboard</span>
 <span className="font-medium text-sm">Dashboard</span>
 </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 mx-2 transition-all hover:bg-[#ffffff]/5 rounded-xl group" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 mx-2 transition-all hover:bg-[#ffffff]/5 rounded-xl group" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
 <span className="font-medium text-sm">Agendamentos</span>
 </a>
-<a className="flex items-center gap-3 bg-[#C8FF00] text-[#4f6700] rounded-xl px-4 py-3 mx-2 font-bold shadow-[0_0_20px_rgba(200,255,0,0.2)]" href="#">
+<a className="flex items-center gap-3 bg-[#C8FF00] text-[#4f6700] rounded-xl px-4 py-3 mx-2 font-bold shadow-[0_0_20px_rgba(200,255,0,0.2)]" href="?module=operacao&screen=configura-ode-servi-os-desktop">
 <span className="material-symbols-outlined" data-icon="content_cut">content_cut</span>
 <span className="font-medium text-sm">Serviços</span>
 </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 mx-2 transition-all hover:bg-[#ffffff]/5 rounded-xl group" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 mx-2 transition-all hover:bg-[#ffffff]/5 rounded-xl group" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">
 <span className="material-symbols-outlined" data-icon="group">group</span>
 <span className="font-medium text-sm">Clientes</span>
 </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 mx-2 transition-all hover:bg-[#ffffff]/5 rounded-xl group" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 mx-2 transition-all hover:bg-[#ffffff]/5 rounded-xl group" href="?module=financeiro&screen=configura-ofinanceira-admin">
 <span className="material-symbols-outlined" data-icon="payments">payments</span>
 <span className="font-medium text-sm">Financeiro</span>
 </a>
@@ -43,11 +43,11 @@ const ConfiguraODeServiOsAtualizada: React.FC = () => {
 <span className="material-symbols-outlined text-sm" data-icon="add">add</span>
 <span className="text-sm">Novo Agendamento</span>
 </button>
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 mx-2 transition-all hover:bg-[#ffffff]/5 rounded-xl" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 mx-2 transition-all hover:bg-[#ffffff]/5 rounded-xl" href="?module=acesso&screen=suporte-echamados">
 <span className="material-symbols-outlined" data-icon="help">help</span>
 <span className="font-medium text-sm">Suporte</span>
 </a>
-<a className="flex items-center gap-3 text-error hover:text-error-dim px-4 py-3 mx-2 transition-all hover:bg-error/5 rounded-xl" href="#">
+<a className="flex items-center gap-3 text-error hover:text-error-dim px-4 py-3 mx-2 transition-all hover:bg-error/5 rounded-xl" href="?module=acesso&screen=tela-de-login">
 <span className="material-symbols-outlined" data-icon="logout">logout</span>
 <span className="font-medium text-sm">Sair</span>
 </a>

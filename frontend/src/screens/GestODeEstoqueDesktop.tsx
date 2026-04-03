@@ -13,32 +13,32 @@ const GestODeEstoqueDesktop: React.FC = () => {
 </div>
 <nav className="flex-1 flex flex-col">
 {/* Dashboard */}
-<a className="text-[#A0A0A0] py-3 px-6 flex items-center gap-4 hover:bg-[#C8FF00]/5 hover:text-[#C8FF00] transition-colors duration-300" href="#">
+<a className="text-[#A0A0A0] py-3 px-6 flex items-center gap-4 hover:bg-[#C8FF00]/5 hover:text-[#C8FF00] transition-colors duration-300" href="?module=overview">
 <span className="material-symbols-outlined">dashboard</span>
 <span className="font-medium text-sm">Dashboard</span>
 </a>
 {/* Agendamentos */}
-<a className="text-[#A0A0A0] py-3 px-6 flex items-center gap-4 hover:bg-[#C8FF00]/5 hover:text-[#C8FF00] transition-colors duration-300" href="#">
+<a className="text-[#A0A0A0] py-3 px-6 flex items-center gap-4 hover:bg-[#C8FF00]/5 hover:text-[#C8FF00] transition-colors duration-300" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined">calendar_today</span>
 <span className="font-medium text-sm">Agendamentos</span>
 </a>
 {/* Clientes */}
-<a className="text-[#A0A0A0] py-3 px-6 flex items-center gap-4 hover:bg-[#C8FF00]/5 hover:text-[#C8FF00] transition-colors duration-300" href="#">
+<a className="text-[#A0A0A0] py-3 px-6 flex items-center gap-4 hover:bg-[#C8FF00]/5 hover:text-[#C8FF00] transition-colors duration-300" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">
 <span className="material-symbols-outlined">groups</span>
 <span className="font-medium text-sm">Clientes</span>
 </a>
 {/* Estoque (Active) */}
-<a className="text-[#C8FF00] bg-[#C8FF00]/10 border-r-4 border-[#C8FF00] py-3 px-6 flex items-center gap-4 transition-transform duration-300 scale-102" href="#">
+<a className="text-[#C8FF00] bg-[#C8FF00]/10 border-r-4 border-[#C8FF00] py-3 px-6 flex items-center gap-4 transition-transform duration-300 scale-102" href="?module=financeiro&screen=configura-ofinanceira-admin">
 <span className="material-symbols-outlined">inventory_2</span>
 <span className="font-medium text-sm">Estoque</span>
 </a>
 {/* Financeiro */}
-<a className="text-[#A0A0A0] py-3 px-6 flex items-center gap-4 hover:bg-[#C8FF00]/5 hover:text-[#C8FF00] transition-colors duration-300" href="#">
+<a className="text-[#A0A0A0] py-3 px-6 flex items-center gap-4 hover:bg-[#C8FF00]/5 hover:text-[#C8FF00] transition-colors duration-300" href="?module=financeiro&screen=configura-ofinanceira-admin">
 <span className="material-symbols-outlined">payments</span>
 <span className="font-medium text-sm">Financeiro</span>
 </a>
 {/* Relatórios */}
-<a className="text-[#A0A0A0] py-3 px-6 flex items-center gap-4 hover:bg-[#C8FF00]/5 hover:text-[#C8FF00] transition-colors duration-300" href="#">
+<a className="text-[#A0A0A0] py-3 px-6 flex items-center gap-4 hover:bg-[#C8FF00]/5 hover:text-[#C8FF00] transition-colors duration-300" href="?module=financeiro&screen=relat-rios-de-faturamento-desktop">
 <span className="material-symbols-outlined">analytics</span>
 <span className="font-medium text-sm">Relatórios</span>
 </a>
@@ -49,11 +49,11 @@ const GestODeEstoqueDesktop: React.FC = () => {
 <span>Novo Pedido</span>
 </button>
 <div className="bg-gradient-to-r from-transparent via-[#C8FF00]/10 to-transparent h-[1px] w-full my-4"></div>
-<a className="text-[#A0A0A0] flex items-center gap-4 hover:text-on-surface transition-colors" href="#">
+<a className="text-[#A0A0A0] flex items-center gap-4 hover:text-on-surface transition-colors" href="?module=acesso&screen=suporte-echamados">
 <span className="material-symbols-outlined">help_outline</span>
 <span className="text-sm">Suporte</span>
 </a>
-<a className="text-error flex items-center gap-4 hover:brightness-110 transition-colors" href="#">
+<a className="text-error flex items-center gap-4 hover:brightness-110 transition-colors" href="?module=acesso&screen=tela-de-login">
 <span className="material-symbols-outlined">logout</span>
 <span className="text-sm font-semibold">Sair</span>
 </a>

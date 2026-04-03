@@ -12,23 +12,23 @@ const ConfiguraODeWebhooksAdmin: React.FC = () => {
 <p className="text-[10px] uppercase tracking-[0.2em] text-on-surface-variant/50 font-bold">Management Console</p>
 </div>
 <nav className="flex flex-col gap-2 flex-grow">
-<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:text-white hover:bg-[#1A1919]/50 hover:scale-[1.02] transition-all duration-300 rounded-xl font-medium text-sm tracking-tight" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:text-white hover:bg-[#1A1919]/50 hover:scale-[1.02] transition-all duration-300 rounded-xl font-medium text-sm tracking-tight" href="?module=overview">
 <span className="material-symbols-outlined" data-icon="dashboard">dashboard</span>
                 Dashboard
             </a>
-<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:text-white hover:bg-[#1A1919]/50 hover:scale-[1.02] transition-all duration-300 rounded-xl font-medium text-sm tracking-tight" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:text-white hover:bg-[#1A1919]/50 hover:scale-[1.02] transition-all duration-300 rounded-xl font-medium text-sm tracking-tight" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
                 Agendamentos
             </a>
-<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:text-white hover:bg-[#1A1919]/50 hover:scale-[1.02] transition-all duration-300 rounded-xl font-medium text-sm tracking-tight" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:text-white hover:bg-[#1A1919]/50 hover:scale-[1.02] transition-all duration-300 rounded-xl font-medium text-sm tracking-tight" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">
 <span className="material-symbols-outlined" data-icon="group">group</span>
                 Clientes
             </a>
-<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:text-white hover:bg-[#1A1919]/50 hover:scale-[1.02] transition-all duration-300 rounded-xl font-medium text-sm tracking-tight" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:text-white hover:bg-[#1A1919]/50 hover:scale-[1.02] transition-all duration-300 rounded-xl font-medium text-sm tracking-tight" href="?module=operacao&screen=configura-ode-servi-os-desktop">
 <span className="material-symbols-outlined" data-icon="content_cut">content_cut</span>
                 Serviços
             </a>
-<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:text-white hover:bg-[#1A1919]/50 hover:scale-[1.02] transition-all duration-300 rounded-xl font-medium text-sm tracking-tight" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:text-white hover:bg-[#1A1919]/50 hover:scale-[1.02] transition-all duration-300 rounded-xl font-medium text-sm tracking-tight" href="?module=financeiro&screen=configura-ofinanceira-admin">
 <span className="material-symbols-outlined" data-icon="payments">payments</span>
                 Financeiro
             </a>
@@ -38,11 +38,11 @@ const ConfiguraODeWebhooksAdmin: React.FC = () => {
             </a>
 </nav>
 <div className="mt-auto flex flex-col gap-2 pt-4 border-t border-outline-variant/10">
-<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:text-white transition-colors text-sm font-medium" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:text-white transition-colors text-sm font-medium" href="?module=operacao&screen=painel-administrativo">
 <span className="material-symbols-outlined" data-icon="settings">settings</span>
                 Configurações
             </a>
-<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:text-white transition-colors text-sm font-medium" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-[#A0A0A0] hover:text-white transition-colors text-sm font-medium" href="?module=acesso&screen=tela-de-login">
 <span className="material-symbols-outlined" data-icon="logout">logout</span>
                 Sair
             </a>

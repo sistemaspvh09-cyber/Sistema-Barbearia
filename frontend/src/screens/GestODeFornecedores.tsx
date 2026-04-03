@@ -12,10 +12,10 @@ const GestODeFornecedores: React.FC = () => {
 <p className="text-[10px] uppercase tracking-[0.2em] text-on-surface-variant mt-1">Management SaaS</p>
 </div>
 <nav className="flex-1 px-4 space-y-2">
-<a className="flex items-center gap-3 px-4 py-3 text-gray-400 hover:text-white transition-colors hover:bg-white/5 hover:scale-[1.02] transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-gray-400 hover:text-white transition-colors hover:bg-white/5 hover:scale-[1.02] transition-all duration-300" href="?module=overview">
 <span className="material-symbols-outlined">dashboard</span> Dashboard
             </a>
-<a className="flex items-center gap-3 px-4 py-3 text-gray-400 hover:text-white transition-colors hover:bg-white/5 hover:scale-[1.02] transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-gray-400 hover:text-white transition-colors hover:bg-white/5 hover:scale-[1.02] transition-all duration-300" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined">calendar_today</span> Agenda
             </a>
 <a className="flex items-center gap-3 px-4 py-3 text-gray-400 hover:text-white transition-colors hover:bg-white/5 hover:scale-[1.02] transition-all duration-300" href="#">

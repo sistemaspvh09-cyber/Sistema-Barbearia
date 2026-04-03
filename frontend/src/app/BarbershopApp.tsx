@@ -56,7 +56,6 @@ const appModuleIds: AppModuleId[] = [
 ]
 
 const sidebarPrimaryEntries: SidebarEntry[] = [
-  { key: 'dashboard', label: 'Cockpit', hint: 'visao geral', moduleId: 'overview' },
   { key: 'agenda', label: 'Agenda', hint: 'encaixes do dia', moduleId: 'agenda', screenSlug: 'agenda-multi-barbeiro-admin' },
   { key: 'novo-agendamento', label: 'Novo agendamento', hint: 'entrada rapida', moduleId: 'agenda', screenSlug: 'agendamento-sele-ode-servi-o' },
   { key: 'clientes', label: 'Clientes', hint: 'crm', moduleId: 'clientes', screenSlug: 'perfil-detalhado-do-cliente-crm' },
@@ -118,9 +117,10 @@ function readLocationSelection(): LocationSelection {
 
 function normalizeWorkspaceSelection(selection: LocationSelection): WorkspaceSelection {
   if (selection.moduleId === 'overview') {
+    // Cockpit removido — redireciona para agenda principal
     return {
-      moduleId: 'overview',
-      screenSlug: null,
+      moduleId: 'agenda',
+      screenSlug: 'agenda-multi-barbeiro-admin',
     }
   }
 
@@ -451,14 +451,12 @@ function FloatingNavigator({
   selection,
   activeModule,
   activeScreen,
-  onOpenOverview,
   onSelectEntry,
   onSelectScreen,
 }: {
   selection: WorkspaceSelection
   activeModule: AppModule | null
   activeScreen: StitchScreen | null
-  onOpenOverview: () => void
   onSelectEntry: (entry: SidebarEntry) => void
   onSelectScreen: (screenSlug: string) => void
 }) {
@@ -505,16 +503,7 @@ function FloatingNavigator({
           BarberPro
         </button>
 
-        {selection.moduleId !== 'overview' ? (
-          <button
-            type="button"
-            onClick={onOpenOverview}
-            className="inline-flex h-12 items-center justify-center rounded-2xl border border-white/10 bg-black/60 px-4 text-sm font-semibold text-white backdrop-blur transition hover:border-primary-container/40"
-          >
-            Cockpit
-          </button>
-        ) : null}
-      </div>
+        </div>
 
       {launcherOpen ? (
         <aside className="fixed right-4 top-16 z-50 flex max-h-[calc(100vh-5rem)] w-[min(388px,calc(100vw-2rem))] flex-col gap-5 overflow-auto rounded-[30px] border border-white/10 bg-black/82 p-4 shadow-[0_40px_120px_rgba(0,0,0,0.6)] backdrop-blur">
@@ -697,14 +686,12 @@ function DirectScreenStage({
   activeModule,
   activeScreen,
   selection,
-  onOpenOverview,
   onSelectEntry,
   onSelectScreen,
 }: {
   activeModule: AppModule
   activeScreen: StitchScreen
   selection: WorkspaceSelection
-  onOpenOverview: () => void
   onSelectEntry: (entry: SidebarEntry) => void
   onSelectScreen: (screenSlug: string) => void
 }) {
@@ -716,7 +703,6 @@ function DirectScreenStage({
         selection={selection}
         activeModule={activeModule}
         activeScreen={activeScreen}
-        onOpenOverview={onOpenOverview}
         onSelectEntry={onSelectEntry}
         onSelectScreen={onSelectScreen}
       />
@@ -820,7 +806,6 @@ function WorkspaceApp({ initialSelection }: { initialSelection: WorkspaceSelecti
       activeModule={activeModule}
       activeScreen={activeScreen}
       selection={selection}
-      onOpenOverview={openOverview}
       onSelectEntry={openSidebarEntry}
       onSelectScreen={(screenSlug) => openModule(activeModule.id, screenSlug)}
     />
@@ -830,7 +815,6 @@ function WorkspaceApp({ initialSelection }: { initialSelection: WorkspaceSelecti
         selection={selection}
         activeModule={activeModule}
         activeScreen={activeScreen}
-        onOpenOverview={openOverview}
         onSelectEntry={openSidebarEntry}
         onSelectScreen={(screenSlug) => {
           const owner = findModuleByScreenSlug(screenSlug)

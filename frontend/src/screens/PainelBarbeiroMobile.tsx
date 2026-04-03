@@ -174,11 +174,11 @@ const PainelBarbeiroMobile: React.FC = () => {
 </main>
 {/* BottomNavBar */}
 <nav className="fixed bottom-0 w-full rounded-t-[24px] z-50 bg-[#1A1919]/70 backdrop-blur-md border-t border-white/5 shadow-[0_-10px_30px_rgba(0,0,0,0.5)] flex justify-around items-center pt-3 pb-6 px-4 w-full">
-<a className="flex flex-col items-center justify-center text-[#C8FF00] scale-110 transition-transform duration-300" href="#">
+<a className="flex flex-col items-center justify-center text-[#C8FF00] scale-110 transition-transform duration-300" href="?module=overview">
 <span className="material-symbols-outlined text-2xl" data-icon="home" style={{ fontVariationSettings: "'FILL' 1" }}>home</span>
 <span className="font-['Plus_Jakarta_Sans'] text-[10px] font-bold tracking-tight">Início</span>
 </a>
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] opacity-60 hover:text-[#C8FF00] hover:opacity-100 transition-all active:scale-90 cubic-bezier(0.4,0,0.2,1)" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] opacity-60 hover:text-[#C8FF00] hover:opacity-100 transition-all active:scale-90 cubic-bezier(0.4,0,0.2,1)" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined text-2xl" data-icon="calendar_today">calendar_today</span>
 <span className="font-['Plus_Jakarta_Sans'] text-[10px] font-bold tracking-tight">Agenda</span>
 </a>
@@ -187,7 +187,7 @@ const PainelBarbeiroMobile: React.FC = () => {
 <span className="material-symbols-outlined text-3xl font-bold" data-icon="add">add</span>
 </button>
 </div>
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] opacity-60 hover:text-[#C8FF00] hover:opacity-100 transition-all active:scale-90 cubic-bezier(0.4,0,0.2,1)" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] opacity-60 hover:text-[#C8FF00] hover:opacity-100 transition-all active:scale-90 cubic-bezier(0.4,0,0.2,1)" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">
 <span className="material-symbols-outlined text-2xl" data-icon="group">group</span>
 <span className="font-['Plus_Jakarta_Sans'] text-[10px] font-bold tracking-tight">Clientes</span>
 </a>

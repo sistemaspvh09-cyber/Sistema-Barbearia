@@ -11,11 +11,11 @@ const CadastrarNovoProduto: React.FC = () => {
 <header className="fixed top-0 w-full z-50 bg-[#0D0D0D]/70 backdrop-blur-xl border-b border-white/10 shadow-[0_40px_40px_rgba(0,0,0,0.08)] flex justify-between items-center px-8 h-20">
 <div className="text-2xl font-extrabold text-[#C8FF00] tracking-tighter font-['Plus_Jakarta_Sans']">BarberPro</div>
 <nav className="hidden md:flex items-center gap-8">
-<a className="text-[#A0A0A0] hover:text-white transition-colors font-['Plus_Jakarta_Sans'] tracking-tight" href="#">Dashboard</a>
-<a className="text-[#A0A0A0] hover:text-white transition-colors font-['Plus_Jakarta_Sans'] tracking-tight" href="#">Agenda</a>
-<a className="text-[#C8FF00] border-b-2 border-[#C8FF00] pb-1 font-['Plus_Jakarta_Sans'] tracking-tight" href="#">Estoque</a>
-<a className="text-[#A0A0A0] hover:text-white transition-colors font-['Plus_Jakarta_Sans'] tracking-tight" href="#">Clientes</a>
-<a className="text-[#A0A0A0] hover:text-white transition-colors font-['Plus_Jakarta_Sans'] tracking-tight" href="#">Financeiro</a>
+<a className="text-[#A0A0A0] hover:text-white transition-colors font-['Plus_Jakarta_Sans'] tracking-tight" href="?module=overview">Dashboard</a>
+<a className="text-[#A0A0A0] hover:text-white transition-colors font-['Plus_Jakarta_Sans'] tracking-tight" href="?module=agenda&screen=agenda-multi-barbeiro-admin">Agenda</a>
+<a className="text-[#C8FF00] border-b-2 border-[#C8FF00] pb-1 font-['Plus_Jakarta_Sans'] tracking-tight" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">Estoque</a>
+<a className="text-[#A0A0A0] hover:text-white transition-colors font-['Plus_Jakarta_Sans'] tracking-tight" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">Clientes</a>
+<a className="text-[#A0A0A0] hover:text-white transition-colors font-['Plus_Jakarta_Sans'] tracking-tight" href="?module=financeiro&screen=configura-ofinanceira-admin">Financeiro</a>
 </nav>
 <div className="flex items-center gap-4">
 <button className="material-symbols-outlined text-[#A0A0A0]">notifications</button>

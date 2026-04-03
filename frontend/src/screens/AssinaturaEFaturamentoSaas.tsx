@@ -11,11 +11,11 @@ const AssinaturaEFaturamentoSaas: React.FC = () => {
 <p className="text-xs text-zinc-500 font-medium">Premium Management</p>
 </div>
 <nav className="flex-1 space-y-1">
-<a className="flex items-center gap-3 px-4 py-3 text-zinc-500 hover:text-zinc-200 hover:bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-xl font-['Plus_Jakarta_Sans'] font-medium text-sm" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-zinc-500 hover:text-zinc-200 hover:bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-xl font-['Plus_Jakarta_Sans'] font-medium text-sm" href="?module=overview">
 <span className="material-symbols-outlined" data-icon="dashboard">dashboard</span>
 <span>Dashboard</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 text-zinc-500 hover:text-zinc-200 hover:bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-xl font-['Plus_Jakarta_Sans'] font-medium text-sm" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-zinc-500 hover:text-zinc-200 hover:bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-xl font-['Plus_Jakarta_Sans'] font-medium text-sm" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
 <span>Agenda</span>
 </a>
@@ -23,7 +23,7 @@ const AssinaturaEFaturamentoSaas: React.FC = () => {
 <span className="material-symbols-outlined" data-icon="groups">groups</span>
 <span>Clients</span>
 </a>
-<a className="flex items-center gap-3 px-4 py-3 text-zinc-500 hover:text-zinc-200 hover:bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-xl font-['Plus_Jakarta_Sans'] font-medium text-sm" href="#">
+<a className="flex items-center gap-3 px-4 py-3 text-zinc-500 hover:text-zinc-200 hover:bg-white/5 hover:scale-[1.02] transition-all duration-300 rounded-xl font-['Plus_Jakarta_Sans'] font-medium text-sm" href="?module=operacao&screen=configura-ode-servi-os-desktop">
 <span className="material-symbols-outlined" data-icon="content_cut">content_cut</span>
 <span>Services</span>
 </a>

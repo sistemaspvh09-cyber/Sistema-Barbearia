@@ -10,9 +10,9 @@ const CentroDeNotificaEs: React.FC = () => {
 <div className="flex items-center gap-8">
 <h1 className="text-xl font-black text-[#C8FF00] italic font-['Plus_Jakarta_Sans'] tracking-tight">BarberPro</h1>
 <div className="hidden md:flex items-center gap-6">
-<a className="text-[#C8FF00] border-b-2 border-[#C8FF00] pb-1 font-['Plus_Jakarta_Sans'] tracking-tight transition-all duration-300" href="#">Dashboard</a>
-<a className="text-[#A0A0A0] hover:text-[#C8FF00] font-['Plus_Jakarta_Sans'] tracking-tight transition-all duration-300" href="#">Agendamentos</a>
-<a className="text-[#A0A0A0] hover:text-[#C8FF00] font-['Plus_Jakarta_Sans'] tracking-tight transition-all duration-300" href="#">Clientes</a>
+<a className="text-[#C8FF00] border-b-2 border-[#C8FF00] pb-1 font-['Plus_Jakarta_Sans'] tracking-tight transition-all duration-300" href="?module=overview">Dashboard</a>
+<a className="text-[#A0A0A0] hover:text-[#C8FF00] font-['Plus_Jakarta_Sans'] tracking-tight transition-all duration-300" href="?module=agenda&screen=agenda-multi-barbeiro-admin">Agendamentos</a>
+<a className="text-[#A0A0A0] hover:text-[#C8FF00] font-['Plus_Jakarta_Sans'] tracking-tight transition-all duration-300" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">Clientes</a>
 </div>
 </div>
 <div className="flex items-center gap-4">
@@ -37,33 +37,33 @@ const CentroDeNotificaEs: React.FC = () => {
 </div>
 </div>
 <nav className="flex-1 px-4 space-y-2">
-<a className="flex items-center gap-3 bg-[#C8FF00]/10 text-[#C8FF00] rounded-lg px-4 py-3 border-r-4 border-[#C8FF00] scale-98 transition-transform duration-200" href="#">
+<a className="flex items-center gap-3 bg-[#C8FF00]/10 text-[#C8FF00] rounded-lg px-4 py-3 border-r-4 border-[#C8FF00] scale-98 transition-transform duration-200" href="?module=overview">
 <span className="material-symbols-outlined" data-icon="dashboard">dashboard</span>
 <span>Dashboard</span>
 </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
 <span>Agendamentos</span>
 </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">
 <span className="material-symbols-outlined" data-icon="groups">groups</span>
 <span>Clientes</span>
 </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors" href="?module=financeiro&screen=configura-ofinanceira-admin">
 <span className="material-symbols-outlined" data-icon="payments">payments</span>
 <span>Financeiro</span>
 </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors" href="?module=operacao&screen=painel-administrativo">
 <span className="material-symbols-outlined" data-icon="settings">settings</span>
 <span>Configurações</span>
 </a>
 </nav>
 <div className="px-4 mt-auto space-y-2 pt-6 border-t border-[#C8FF00]/10">
-<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 hover:bg-[#1A1919] hover:text-[#C8FF00] transition-colors" href="?module=acesso&screen=suporte-echamados">
 <span className="material-symbols-outlined" data-icon="contact_support">contact_support</span>
 <span>Suporte</span>
 </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 hover:bg-[#1A1919] hover:text-error transition-colors" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] px-4 py-3 hover:bg-[#1A1919] hover:text-error transition-colors" href="?module=acesso&screen=tela-de-login">
 <span className="material-symbols-outlined" data-icon="logout">logout</span>
 <span>Sair</span>
 </a>

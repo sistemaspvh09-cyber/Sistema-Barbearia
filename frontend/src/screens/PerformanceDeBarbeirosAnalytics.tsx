@@ -11,10 +11,10 @@ const PerformanceDeBarbeirosAnalytics: React.FC = () => {
 <span className="text-xl font-extrabold text-[#C8FF00] tracking-tighter">BarberPro</span>
 </div>
 <div className="hidden md:flex items-center gap-8 font-medium tracking-tight">
-<a className="text-[#A0A0A0] hover:text-[#C8FF00] transition-colors duration-300" href="#">Dashboard</a>
-<a className="text-[#A0A0A0] hover:text-[#C8FF00] transition-colors duration-300" href="#">Financeiro</a>
-<a className="text-[#C8FF00] font-bold" href="#">Equipe</a>
-<a className="text-[#A0A0A0] hover:text-[#C8FF00] transition-colors duration-300" href="#">Relatórios</a>
+<a className="text-[#A0A0A0] hover:text-[#C8FF00] transition-colors duration-300" href="?module=overview">Dashboard</a>
+<a className="text-[#A0A0A0] hover:text-[#C8FF00] transition-colors duration-300" href="?module=financeiro&screen=configura-ofinanceira-admin">Financeiro</a>
+<a className="text-[#C8FF00] font-bold" href="?module=operacao&screen=gest-ode-equipe-admin">Equipe</a>
+<a className="text-[#A0A0A0] hover:text-[#C8FF00] transition-colors duration-300" href="?module=financeiro&screen=relat-rios-de-faturamento-desktop">Relatórios</a>
 </div>
 <div className="flex items-center gap-4">
 <span className="material-symbols-outlined text-[#A0A0A0] cursor-pointer hover:text-[#C8FF00]">notifications</span>
@@ -31,15 +31,15 @@ const PerformanceDeBarbeirosAnalytics: React.FC = () => {
 <p className="text-[#A0A0A0] text-xs">Gestão de Alta Performance</p>
 </div>
 <nav className="flex flex-col gap-1">
-<a className="flex items-center gap-3 px-6 py-3 text-[#A0A0A0] hover:bg-[#C8FF00]/5 hover:text-[#C8FF00] transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-6 py-3 text-[#A0A0A0] hover:bg-[#C8FF00]/5 hover:text-[#C8FF00] transition-all duration-300" href="?module=overview">
 <span className="material-symbols-outlined">dashboard</span>
 <span className="text-sm font-semibold">Dashboard</span>
 </a>
-<a className="flex items-center gap-3 px-6 py-3 text-[#A0A0A0] hover:bg-[#C8FF00]/5 hover:text-[#C8FF00] transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-6 py-3 text-[#A0A0A0] hover:bg-[#C8FF00]/5 hover:text-[#C8FF00] transition-all duration-300" href="?module=financeiro&screen=configura-ofinanceira-admin">
 <span className="material-symbols-outlined">payments</span>
 <span className="text-sm font-semibold">Financeiro</span>
 </a>
-<a className="flex items-center gap-3 px-6 py-3 bg-[#C8FF00]/10 text-[#C8FF00] border-r-4 border-[#C8FF00] transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-6 py-3 bg-[#C8FF00]/10 text-[#C8FF00] border-r-4 border-[#C8FF00] transition-all duration-300" href="?module=operacao&screen=gest-ode-equipe-admin">
 <span className="material-symbols-outlined">group</span>
 <span className="text-sm font-semibold">Equipe</span>
 </a>
@@ -47,7 +47,7 @@ const PerformanceDeBarbeirosAnalytics: React.FC = () => {
 <span className="material-symbols-outlined">shopping_cart_checkout</span>
 <span className="text-sm font-semibold">Checkout</span>
 </a>
-<a className="flex items-center gap-3 px-6 py-3 text-[#A0A0A0] hover:bg-[#C8FF00]/5 hover:text-[#C8FF00] transition-all duration-300" href="#">
+<a className="flex items-center gap-3 px-6 py-3 text-[#A0A0A0] hover:bg-[#C8FF00]/5 hover:text-[#C8FF00] transition-all duration-300" href="?module=financeiro&screen=relat-rios-de-faturamento-desktop">
 <span className="material-symbols-outlined">analytics</span>
 <span className="text-sm font-semibold">Relatórios</span>
 </a>
@@ -57,10 +57,10 @@ const PerformanceDeBarbeirosAnalytics: React.FC = () => {
                 Novo Agendamento
             </button>
 <div className="mt-4 pt-4 border-t border-white/5 flex flex-col gap-2">
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white text-sm" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white text-sm" href="?module=acesso&screen=suporte-echamados">
 <span className="material-symbols-outlined text-sm">help_center</span> Suporte
                 </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white text-sm" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white text-sm" href="?module=acesso&screen=tela-de-login">
 <span className="material-symbols-outlined text-sm">logout</span> Sair
                 </a>
 </div>
@@ -335,7 +335,7 @@ const PerformanceDeBarbeirosAnalytics: React.FC = () => {
 </main>
 {/* BottomNavBar (Mobile Only Shared Component) */}
 <nav className="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 h-20 bg-[#0D0D0D]/80 backdrop-blur-lg border-t border-[#C8FF00]/10 pb-safe rounded-t-3xl shadow-[0px_-10px_30px_rgba(0,0,0,0.8)]">
-<a className="flex flex-col items-center justify-center text-[#A0A0A0]" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0]" href="?module=overview">
 <span className="material-symbols-outlined">home</span>
 <span className="text-[10px] font-bold uppercase tracking-widest mt-1">Início</span>
 </a>
@@ -343,7 +343,7 @@ const PerformanceDeBarbeirosAnalytics: React.FC = () => {
 <span className="material-symbols-outlined">account_balance_wallet</span>
 <span className="text-[10px] font-bold uppercase tracking-widest mt-1">Finan.</span>
 </a>
-<a className="flex flex-col items-center justify-center text-[#C8FF00] bg-[#C8FF00]/10 rounded-xl px-4 py-1" href="#">
+<a className="flex flex-col items-center justify-center text-[#C8FF00] bg-[#C8FF00]/10 rounded-xl px-4 py-1" href="?module=operacao&screen=gest-ode-equipe-admin">
 <span className="material-symbols-outlined">badge</span>
 <span className="text-[10px] font-bold uppercase tracking-widest mt-1">Equipe</span>
 </a>

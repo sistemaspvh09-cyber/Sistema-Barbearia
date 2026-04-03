@@ -12,19 +12,19 @@ const ComissEsPersonalizadasAdmin: React.FC = () => {
 <p className="text-[10px] uppercase tracking-[0.2em] text-on-surface-variant font-bold mt-1">Premium Management</p>
 </div>
 <nav className="flex-1 px-4 space-y-2 mt-4">
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 rounded-xl transition-all duration-300 hover:bg-white/5" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 rounded-xl transition-all duration-300 hover:bg-white/5" href="?module=overview">
 <span className="material-symbols-outlined">dashboard</span>
 <span className="font-semibold text-sm">Dashboard</span>
 </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 rounded-xl transition-all duration-300 hover:bg-white/5" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 rounded-xl transition-all duration-300 hover:bg-white/5" href="?module=operacao&screen=gest-ode-equipe-admin">
 <span className="material-symbols-outlined">content_cut</span>
 <span className="font-semibold text-sm">Barbers</span>
 </a>
-<a className="flex items-center gap-3 bg-[#C8FF00] text-[#4f6700] rounded-xl px-4 py-3 shadow-[0px_0px_20px_rgba(200,255,0,0.2)]" href="#">
+<a className="flex items-center gap-3 bg-[#C8FF00] text-[#4f6700] rounded-xl px-4 py-3 shadow-[0px_0px_20px_rgba(200,255,0,0.2)]" href="?module=financeiro&screen=relat-rio-de-comiss-es-por-barbeiro">
 <span className="material-symbols-outlined">payments</span>
 <span className="font-semibold text-sm">Commission</span>
 </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 rounded-xl transition-all duration-300 hover:bg-white/5" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-3 rounded-xl transition-all duration-300 hover:bg-white/5" href="?module=integracoes&screen=integra-ogoogle-agenda-admin">
 <span className="material-symbols-outlined">calendar_month</span>
 <span className="font-semibold text-sm">Calendar</span>
 </a>
@@ -34,10 +34,10 @@ const ComissEsPersonalizadasAdmin: React.FC = () => {
                 New Appointment
             </button>
 <div className="mt-4 flex flex-col gap-1">
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-2 text-xs font-medium" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-2 text-xs font-medium" href="?module=acesso&screen=suporte-echamados">
 <span className="material-symbols-outlined text-lg">help</span> Support
                 </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-2 text-xs font-medium" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white px-4 py-2 text-xs font-medium" href="?module=acesso&screen=tela-de-login">
 <span className="material-symbols-outlined text-lg">logout</span> Logout
                 </a>
 </div>
@@ -197,11 +197,11 @@ const ComissEsPersonalizadasAdmin: React.FC = () => {
 </main>
 {/* BottomNavBar (Mobile) */}
 <nav className="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-safe pt-2 bg-[#0D0D0D]/80 backdrop-blur-lg z-50 rounded-t-[24px] border-t border-[#C8FF00]/15 shadow-[0_-10px_40px_rgba(0,0,0,0.5)]">
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] p-2 hover:text-white active:scale-90 transition-all duration-300" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] p-2 hover:text-white active:scale-90 transition-all duration-300" href="?module=overview">
 <span className="material-symbols-outlined">home</span>
 <span className="font-plus-jakarta text-[10px] font-bold uppercase tracking-widest mt-1">Home</span>
 </a>
-<a className="flex flex-col items-center justify-center text-[#A0A0A0] p-2 hover:text-white active:scale-90 transition-all duration-300" href="#">
+<a className="flex flex-col items-center justify-center text-[#A0A0A0] p-2 hover:text-white active:scale-90 transition-all duration-300" href="?module=operacao&screen=gest-ode-equipe-admin">
 <span className="material-symbols-outlined">group</span>
 <span className="font-plus-jakarta text-[10px] font-bold uppercase tracking-widest mt-1">Barbers</span>
 </a>

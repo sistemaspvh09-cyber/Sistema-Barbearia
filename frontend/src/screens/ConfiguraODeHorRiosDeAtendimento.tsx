@@ -12,23 +12,23 @@ const ConfiguraODeHorRiosDeAtendimento: React.FC = () => {
 <p className="text-[10px] uppercase tracking-widest text-[#A0A0A0] font-bold">Gestão de Precisão</p>
 </div>
 <nav className="flex flex-col gap-2 flex-1">
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white hover:bg-white/5 rounded-xl px-4 py-3 transition-all duration-300" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white hover:bg-white/5 rounded-xl px-4 py-3 transition-all duration-300" href="?module=agenda&screen=agenda-multi-barbeiro-admin">
 <span className="material-symbols-outlined">calendar_today</span>
 <span className="font-semibold text-sm">Agenda</span>
 </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white hover:bg-white/5 rounded-xl px-4 py-3 transition-all duration-300" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white hover:bg-white/5 rounded-xl px-4 py-3 transition-all duration-300" href="?module=clientes&screen=perfil-detalhado-do-cliente-crm">
 <span className="material-symbols-outlined">group</span>
 <span className="font-semibold text-sm">Clientes</span>
 </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white hover:bg-white/5 rounded-xl px-4 py-3 transition-all duration-300" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white hover:bg-white/5 rounded-xl px-4 py-3 transition-all duration-300" href="?module=operacao&screen=configura-ode-servi-os-desktop">
 <span className="material-symbols-outlined">content_cut</span>
 <span className="font-semibold text-sm">Serviços</span>
 </a>
-<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white hover:bg-white/5 rounded-xl px-4 py-3 transition-all duration-300" href="#">
+<a className="flex items-center gap-3 text-[#A0A0A0] hover:text-white hover:bg-white/5 rounded-xl px-4 py-3 transition-all duration-300" href="?module=financeiro&screen=configura-ofinanceira-admin">
 <span className="material-symbols-outlined">payments</span>
 <span className="font-semibold text-sm">Financeiro</span>
 </a>
-<a className="flex items-center gap-3 bg-[#C8FF00] text-[#4f6700] rounded-xl px-4 py-3 shadow-[0px_0px_20px_rgba(200,255,0,0.2)] font-semibold text-sm" href="#">
+<a className="flex items-center gap-3 bg-[#C8FF00] text-[#4f6700] rounded-xl px-4 py-3 shadow-[0px_0px_20px_rgba(200,255,0,0.2)] font-semibold text-sm" href="?module=operacao&screen=painel-administrativo">
 <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>settings</span>
 <span className="font-semibold text-sm">Configurações</span>
 </a>
